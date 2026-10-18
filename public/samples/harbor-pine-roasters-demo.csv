@@ -1,0 +1,915 @@
+Txn Date,Narration,Head,Withdrawal,Deposit,Running Balance,Party,Invoice No,Payment Status,Due On,Account
+01/10/2025,Card settlement - cafe,Sales - Cafe,,577.54,19577.54,,,,,Operating
+01/10/2025,Rent - Unit 4 Harbor St,Rent,4800.00,,14777.54,Harbor Property Group,,,,Operating
+02/10/2025,Card settlement - cafe,Sales - Cafe,,567.83,15345.37,,,,,Operating
+03/10/2025,Card settlement - cafe,Sales - Cafe,,729.75,16075.12,,,,,Operating
+03/10/2025,Dairy Fresh Co,COGS - Dairy,520.16,,15554.96,,,,,Operating
+03/10/2025,Cafe supplies,Supplies,101.91,,15453.05,,,,,Operating
+03/10/2025,Shopify subscription,Software,79.00,,15374.05,Shopify,,,,Operating
+04/10/2025,Card settlement - cafe,Sales - Cafe,,850.03,16224.08,,,,,Operating
+04/10/2025,Cafe supplies,Supplies,101.68,,16122.40,,,,,Operating
+04/10/2025,Square subscription,Software,89.00,,16033.40,Square,,,,Operating
+05/10/2025,Card settlement - cafe,Sales - Cafe,,913.13,16946.53,,,,,Operating
+05/10/2025,Loan repayment - term loan,Loan repayment,2150.00,,14796.53,First Coastal Bank,,,,Operating
+06/10/2025,Card settlement - cafe,Sales - Cafe,,711.55,15508.08,,,,,Operating
+06/10/2025,Online store payout,Sales - Online,,1889.54,17397.62,,,,,Operating
+06/10/2025,Cafe supplies,Supplies,134.76,,17262.86,,,,,Operating
+06/10/2025,Xero subscription,Software,42.00,,17220.86,Xero,,,,Operating
+07/10/2025,Card settlement - cafe,Sales - Cafe,,569.69,17790.55,,,,,Operating
+08/10/2025,Card settlement - cafe,Sales - Cafe,,726.86,18517.41,,,,,Operating
+08/10/2025,Utility bill,Utilities,652.18,,17865.23,City Utilities,,,,Operating
+09/10/2025,Card settlement - cafe,Sales - Cafe,,731.53,18596.76,,,,,Operating
+10/10/2025,Card settlement - cafe,Sales - Cafe,,808.33,19405.09,,,,,Operating
+10/10/2025,Dairy Fresh Co,COGS - Dairy,559.98,,18845.11,,,,,Operating
+11/10/2025,Card settlement - cafe,Sales - Cafe,,1005.59,19850.70,,,,,Operating
+12/10/2025,Card settlement - cafe,Sales - Cafe,,736.94,20587.64,,,,,Operating
+12/10/2025,Business insurance premium,Insurance,410.00,,20177.64,SafeHarbor Insurance,,,,Operating
+13/10/2025,Card settlement - cafe,Sales - Cafe,,607.66,20785.30,,,,,Operating
+13/10/2025,Online store payout,Sales - Online,,1821.19,22606.49,,,,,Operating
+14/10/2025,Card settlement - cafe,Sales - Cafe,,678.36,23284.85,,,,,Operating
+14/10/2025,Cafe supplies,Supplies,93.62,,23191.23,,,,,Operating
+15/10/2025,Card settlement - cafe,Sales - Cafe,,647.74,23838.97,,,,,Operating
+15/10/2025,Payroll run,Payroll,11200.00,,12638.97,Payroll,,,,Operating
+15/10/2025,Sales tax remittance,Tax,5900.00,,6738.97,State Revenue Dept,,,,Operating
+16/10/2025,Card settlement - cafe,Sales - Cafe,,718.76,7457.73,,,,,Operating
+17/10/2025,Card settlement - cafe,Sales - Cafe,,800.31,8258.04,,,,,Operating
+17/10/2025,Dairy Fresh Co,COGS - Dairy,476.49,,7781.55,,,,,Operating
+17/10/2025,Cafe supplies,Supplies,126.29,,7655.26,,,,,Operating
+18/10/2025,Card settlement - cafe,Sales - Cafe,,1084.44,8739.70,,,,,Operating
+19/10/2025,Card settlement - cafe,Sales - Cafe,,898.78,9638.48,,,,,Operating
+20/10/2025,Card settlement - cafe,Sales - Cafe,,582.34,10220.82,,,,,Operating
+20/10/2025,Online store payout,Sales - Online,,1618.66,11839.48,,,,,Operating
+20/10/2025,Meta Ads,Marketing,1026.94,,10812.54,Meta,,,,Operating
+21/10/2025,Card settlement - cafe,Sales - Cafe,,633.21,11445.75,,,,,Operating
+21/10/2025,Cafe supplies,Supplies,144.33,,11301.42,,,,,Operating
+22/10/2025,Card settlement - cafe,Sales - Cafe,,668.41,11969.83,,,,,Operating
+22/10/2025,Cafe supplies,Supplies,155.86,,11813.97,,,,,Operating
+23/10/2025,Card settlement - cafe,Sales - Cafe,,586.95,12400.92,,,,,Operating
+24/10/2025,Card settlement - cafe,Sales - Cafe,,780.17,13181.09,,,,,Operating
+24/10/2025,Dairy Fresh Co,COGS - Dairy,469.55,,12711.54,,,,,Operating
+24/10/2025,Cafe supplies,Supplies,119.27,,12592.27,,,,,Operating
+25/10/2025,Card settlement - cafe,Sales - Cafe,,876.62,13468.89,,,,,Operating
+26/10/2025,Card settlement - cafe,Sales - Cafe,,947.81,14416.70,,,,,Operating
+27/10/2025,Card settlement - cafe,Sales - Cafe,,601.81,15018.51,,,,,Operating
+27/10/2025,Online store payout,Sales - Online,,1578.26,16596.77,,,,,Operating
+27/10/2025,Cafe supplies,Supplies,100.44,,16496.33,,,,,Operating
+28/10/2025,Card settlement - cafe,Sales - Cafe,,627.90,17124.23,,,,,Operating
+29/10/2025,Card settlement - cafe,Sales - Cafe,,577.92,17702.15,,,,,Operating
+29/10/2025,Cafe supplies,Supplies,66.08,,17636.07,,,,,Operating
+30/10/2025,Card settlement - cafe,Sales - Cafe,,612.12,18248.19,,,,,Operating
+30/10/2025,Cafe supplies,Supplies,136.96,,18111.23,,,,,Operating
+31/10/2025,Card settlement - cafe,Sales - Cafe,,654.51,18765.74,,,,,Operating
+31/10/2025,Dairy Fresh Co,COGS - Dairy,530.46,,18235.28,,,,,Operating
+31/10/2025,Cafe supplies,Supplies,158.58,,18076.70,,,,,Operating
+31/10/2025,Payroll run,Payroll,11200.00,,6876.70,Payroll,,,,Operating
+01/11/2025,Card settlement - cafe,Sales - Cafe,,1046.49,7923.19,,,,,Operating
+01/11/2025,Cafe supplies,Supplies,83.52,,7839.67,,,,,Operating
+01/11/2025,Rent - Unit 4 Harbor St,Rent,4800.00,,3039.67,Harbor Property Group,,,,Operating
+02/11/2025,Card settlement - cafe,Sales - Cafe,,730.11,3769.78,,,,,Operating
+03/11/2025,Card settlement - cafe,Sales - Cafe,,672.48,4442.26,,,,,Operating
+03/11/2025,Online store payout,Sales - Online,,1931.51,6373.77,,,,,Operating
+03/11/2025,Cafe supplies,Supplies,78.54,,6295.23,,,,,Operating
+03/11/2025,Shopify subscription,Software,79.00,,6216.23,Shopify,,,,Operating
+04/11/2025,Card settlement - cafe,Sales - Cafe,,617.60,6833.83,,,,,Operating
+04/11/2025,Cafe supplies,Supplies,93.43,,6740.40,,,,,Operating
+04/11/2025,Square subscription,Software,89.00,,6651.40,Square,,,,Operating
+05/11/2025,Card settlement - cafe,Sales - Cafe,,704.10,7355.50,,,,,Operating
+05/11/2025,Loan repayment - term loan,Loan repayment,2150.00,,5205.50,First Coastal Bank,,,,Operating
+05/11/2025,Payment received INV-1040,Sales - Wholesale,,4327.09,9532.59,Brightside Hotels,INV-1040,Paid,02/11/2025,Operating
+06/11/2025,Card settlement - cafe,Sales - Cafe,,620.27,10152.86,,,,,Operating
+06/11/2025,Xero subscription,Software,42.00,,10110.86,Xero,,,,Operating
+06/11/2025,Payment received INV-1140,Sales - Wholesale,,1640.06,11750.92,Lakeview Bistros,INV-1140,Paid,03/11/2025,Operating
+07/11/2025,Card settlement - cafe,Sales - Cafe,,661.91,12412.83,,,,,Operating
+07/11/2025,Dairy Fresh Co,COGS - Dairy,574.88,,11837.95,,,,,Operating
+07/11/2025,Payment received INV-1090,Sales - Wholesale,,1844.96,13682.91,Maple Street Grocers,INV-1090,Paid,02/11/2025,Operating
+07/11/2025,Payment received INV-1165,Sales - Wholesale,,1034.35,14717.26,Corner Co-op,INV-1165,Paid,01/11/2025,Operating
+08/11/2025,Card settlement - cafe,Sales - Cafe,,985.46,15702.72,,,,,Operating
+08/11/2025,Cafe supplies,Supplies,139.03,,15563.69,,,,,Operating
+08/11/2025,Utility bill,Utilities,666.10,,14897.59,City Utilities,,,,Operating
+09/11/2025,Card settlement - cafe,Sales - Cafe,,717.91,15615.50,,,,,Operating
+09/11/2025,Payment received INV-1115,Sales - Wholesale,,1323.03,16938.53,Northgate Offices,INV-1115,Paid,02/11/2025,Operating
+09/11/2025,Payment sent PR-1191,COGS - Packaging,2119.33,,14819.20,PackRight Supplies,PR-1191,Paid,09/11/2025,Operating
+10/11/2025,Card settlement - cafe,Sales - Cafe,,661.46,15480.66,,,,,Operating
+10/11/2025,Online store payout,Sales - Online,,1571.04,17051.70,,,,,Operating
+11/11/2025,Card settlement - cafe,Sales - Cafe,,556.98,17608.68,,,,,Operating
+11/11/2025,Cafe supplies,Supplies,142.97,,17465.71,,,,,Operating
+12/11/2025,Card settlement - cafe,Sales - Cafe,,676.01,18141.72,,,,,Operating
+12/11/2025,Business insurance premium,Insurance,410.00,,17731.72,SafeHarbor Insurance,,,,Operating
+13/11/2025,Card settlement - cafe,Sales - Cafe,,695.02,18426.74,,,,,Operating
+13/11/2025,Cafe supplies,Supplies,90.07,,18336.67,,,,,Operating
+13/11/2025,Payment received INV-1041,Sales - Wholesale,,3692.88,22029.55,Brightside Hotels,INV-1041,Paid,10/11/2025,Operating
+14/11/2025,Card settlement - cafe,Sales - Cafe,,787.62,22817.17,,,,,Operating
+14/11/2025,Dairy Fresh Co,COGS - Dairy,574.05,,22243.12,,,,,Operating
+14/11/2025,Cafe supplies,Supplies,114.74,,22128.38,,,,,Operating
+15/11/2025,Card settlement - cafe,Sales - Cafe,,884.43,23012.81,,,,,Operating
+15/11/2025,Cafe supplies,Supplies,114.67,,22898.14,,,,,Operating
+15/11/2025,Payroll run,Payroll,11200.00,,11698.14,Payroll,,,,Operating
+16/11/2025,Card settlement - cafe,Sales - Cafe,,783.10,12481.24,,,,,Operating
+17/11/2025,Card settlement - cafe,Sales - Cafe,,552.25,13033.49,,,,,Operating
+17/11/2025,Online store payout,Sales - Online,,1564.82,14598.31,,,,,Operating
+17/11/2025,Payment received INV-1042,Sales - Wholesale,,4121.69,18720.00,Brightside Hotels,INV-1042,Paid,15/11/2025,Operating
+18/11/2025,Card settlement - cafe,Sales - Cafe,,621.62,19341.62,,,,,Operating
+18/11/2025,Cafe supplies,Supplies,108.76,,19232.86,,,,,Operating
+18/11/2025,Payment received INV-1141,Sales - Wholesale,,1568.76,20801.62,Lakeview Bistros,INV-1141,Paid,16/11/2025,Operating
+19/11/2025,Card settlement - cafe,Sales - Cafe,,625.44,21427.06,,,,,Operating
+20/11/2025,Card settlement - cafe,Sales - Cafe,,692.26,22119.32,,,,,Operating
+20/11/2025,Cafe supplies,Supplies,160.03,,21959.29,,,,,Operating
+20/11/2025,Meta Ads,Marketing,1207.62,,20751.67,Meta,,,,Operating
+20/11/2025,Payment received INV-1091,Sales - Wholesale,,2067.31,22818.98,Maple Street Grocers,INV-1091,Paid,17/11/2025,Operating
+21/11/2025,Card settlement - cafe,Sales - Cafe,,667.24,23486.22,,,,,Operating
+21/11/2025,Dairy Fresh Co,COGS - Dairy,578.53,,22907.69,,,,,Operating
+22/11/2025,Card settlement - cafe,Sales - Cafe,,920.03,23827.72,,,,,Operating
+22/11/2025,Payment received INV-1116,Sales - Wholesale,,1325.83,25153.55,Northgate Offices,INV-1116,Paid,16/11/2025,Operating
+23/11/2025,Card settlement - cafe,Sales - Cafe,,962.65,26116.20,,,,,Operating
+23/11/2025,Payment sent OD-1178,COGS - Green coffee,13304.47,,12811.73,Origin Direct Imports,OD-1178,Paid,20/11/2025,Operating
+24/11/2025,Card settlement - cafe,Sales - Cafe,,538.76,13350.49,,,,,Operating
+24/11/2025,Online store payout,Sales - Online,,1929.09,15279.58,,,,,Operating
+24/11/2025,Cafe supplies,Supplies,133.10,,15146.48,,,,,Operating
+25/11/2025,Card settlement - cafe,Sales - Cafe,,521.15,15667.63,,,,,Operating
+26/11/2025,Card settlement - cafe,Sales - Cafe,,698.22,16365.85,,,,,Operating
+26/11/2025,Cafe supplies,Supplies,158.54,,16207.31,,,,,Operating
+26/11/2025,Payment received INV-1043,Sales - Wholesale,,4286.52,20493.83,Brightside Hotels,INV-1043,Paid,23/11/2025,Operating
+27/11/2025,Card settlement - cafe,Sales - Cafe,,702.88,21196.71,,,,,Operating
+27/11/2025,Cafe supplies,Supplies,100.25,,21096.46,,,,,Operating
+28/11/2025,Card settlement - cafe,Sales - Cafe,,701.83,21798.29,,,,,Operating
+28/11/2025,Dairy Fresh Co,COGS - Dairy,516.51,,21281.78,,,,,Operating
+28/11/2025,Cafe supplies,Supplies,77.61,,21204.17,,,,,Operating
+29/11/2025,Card settlement - cafe,Sales - Cafe,,909.19,22113.36,,,,,Operating
+29/11/2025,Cafe supplies,Supplies,119.83,,21993.53,,,,,Operating
+30/11/2025,Card settlement - cafe,Sales - Cafe,,862.11,22855.64,,,,,Operating
+30/11/2025,Payroll run,Payroll,11200.00,,11655.64,Payroll,,,,Operating
+01/12/2025,Card settlement - cafe,Sales - Cafe,,560.66,12216.30,,,,,Operating
+01/12/2025,Online store payout,Sales - Online,,1950.32,14166.62,,,,,Operating
+01/12/2025,Rent - Unit 4 Harbor St,Rent,4800.00,,9366.62,Harbor Property Group,,,,Operating
+02/12/2025,Card settlement - cafe,Sales - Cafe,,537.74,9904.36,,,,,Operating
+03/12/2025,Card settlement - cafe,Sales - Cafe,,648.05,10552.41,,,,,Operating
+03/12/2025,Shopify subscription,Software,79.00,,10473.41,Shopify,,,,Operating
+04/12/2025,Card settlement - cafe,Sales - Cafe,,577.79,11051.20,,,,,Operating
+04/12/2025,Square subscription,Software,89.00,,10962.20,Square,,,,Operating
+05/12/2025,Card settlement - cafe,Sales - Cafe,,689.28,11651.48,,,,,Operating
+05/12/2025,Dairy Fresh Co,COGS - Dairy,508.29,,11143.19,,,,,Operating
+05/12/2025,Loan repayment - term loan,Loan repayment,2150.00,,8993.19,First Coastal Bank,,,,Operating
+06/12/2025,Card settlement - cafe,Sales - Cafe,,945.87,9939.06,,,,,Operating
+06/12/2025,Xero subscription,Software,42.00,,9897.06,Xero,,,,Operating
+06/12/2025,Payment received INV-1044,Sales - Wholesale,,4482.25,14379.31,Brightside Hotels,INV-1044,Paid,03/12/2025,Operating
+07/12/2025,Card settlement - cafe,Sales - Cafe,,853.58,15232.89,,,,,Operating
+07/12/2025,Payment received INV-1092,Sales - Wholesale,,1882.21,17115.10,Maple Street Grocers,INV-1092,Paid,04/12/2025,Operating
+07/12/2025,Payment received INV-1142,Sales - Wholesale,,1510.38,18625.48,Lakeview Bistros,INV-1142,Paid,02/12/2025,Operating
+08/12/2025,Card settlement - cafe,Sales - Cafe,,693.11,19318.59,,,,,Operating
+08/12/2025,Online store payout,Sales - Online,,1636.44,20955.03,,,,,Operating
+08/12/2025,Cafe supplies,Supplies,79.90,,20875.13,,,,,Operating
+08/12/2025,Utility bill,Utilities,637.07,,20238.06,City Utilities,,,,Operating
+09/12/2025,Card settlement - cafe,Sales - Cafe,,523.80,20761.86,,,,,Operating
+10/12/2025,Card settlement - cafe,Sales - Cafe,,630.03,21391.89,,,,,Operating
+10/12/2025,Cafe supplies,Supplies,137.69,,21254.20,,,,,Operating
+10/12/2025,Payment received INV-1117,Sales - Wholesale,,1307.82,22562.02,Northgate Offices,INV-1117,Paid,03/12/2025,Operating
+10/12/2025,Payment sent PR-1192,COGS - Packaging,2334.88,,20227.14,PackRight Supplies,PR-1192,Paid,10/12/2025,Operating
+11/12/2025,Card settlement - cafe,Sales - Cafe,,604.97,20832.11,,,,,Operating
+11/12/2025,Payment received INV-1166,Sales - Wholesale,,1157.01,21989.12,Corner Co-op,INV-1166,Paid,03/12/2025,Operating
+12/12/2025,Card settlement - cafe,Sales - Cafe,,696.88,22686.00,,,,,Operating
+12/12/2025,Dairy Fresh Co,COGS - Dairy,495.43,,22190.57,,,,,Operating
+12/12/2025,Cafe supplies,Supplies,111.78,,22078.79,,,,,Operating
+12/12/2025,Business insurance premium,Insurance,410.00,,21668.79,SafeHarbor Insurance,,,,Operating
+13/12/2025,Card settlement - cafe,Sales - Cafe,,1053.59,22722.38,,,,,Operating
+13/12/2025,Payment received INV-1045,Sales - Wholesale,,4036.35,26758.73,Brightside Hotels,INV-1045,Paid,10/12/2025,Operating
+14/12/2025,Card settlement - cafe,Sales - Cafe,,932.97,27691.70,,,,,Operating
+15/12/2025,Card settlement - cafe,Sales - Cafe,,574.13,28265.83,,,,,Operating
+15/12/2025,Online store payout,Sales - Online,,1947.62,30213.45,,,,,Operating
+15/12/2025,Payroll run,Payroll,11200.00,,19013.45,Payroll,,,,Operating
+16/12/2025,Card settlement - cafe,Sales - Cafe,,649.24,19662.69,,,,,Operating
+17/12/2025,Card settlement - cafe,Sales - Cafe,,682.20,20344.89,,,,,Operating
+18/12/2025,Card settlement - cafe,Sales - Cafe,,703.74,21048.63,,,,,Operating
+18/12/2025,Payment received INV-1046,Sales - Wholesale,,4465.30,25513.93,Brightside Hotels,INV-1046,Paid,16/12/2025,Operating
+19/12/2025,Card settlement - cafe,Sales - Cafe,,839.47,26353.40,,,,,Operating
+19/12/2025,Dairy Fresh Co,COGS - Dairy,482.91,,25870.49,,,,,Operating
+19/12/2025,Payment received INV-1143,Sales - Wholesale,,1704.71,27575.20,Lakeview Bistros,INV-1143,Paid,17/12/2025,Operating
+20/12/2025,Card settlement - cafe,Sales - Cafe,,1025.54,28600.74,,,,,Operating
+20/12/2025,Meta Ads,Marketing,1228.48,,27372.26,Meta,,,,Operating
+20/12/2025,Payment received INV-1093,Sales - Wholesale,,1948.05,29320.31,Maple Street Grocers,INV-1093,Paid,16/12/2025,Operating
+21/12/2025,Card settlement - cafe,Sales - Cafe,,744.16,30064.47,,,,,Operating
+22/12/2025,Card settlement - cafe,Sales - Cafe,,615.09,30679.56,,,,,Operating
+22/12/2025,Online store payout,Sales - Online,,1974.20,32653.76,,,,,Operating
+23/12/2025,Card settlement - cafe,Sales - Cafe,,679.35,33333.11,,,,,Operating
+23/12/2025,Payment received INV-1118,Sales - Wholesale,,1155.77,34488.88,Northgate Offices,INV-1118,Paid,18/12/2025,Operating
+24/12/2025,Card settlement - cafe,Sales - Cafe,,579.29,35068.17,,,,,Operating
+24/12/2025,Payment received INV-1047,Sales - Wholesale,,4183.65,39251.82,Brightside Hotels,INV-1047,Paid,23/12/2025,Operating
+24/12/2025,Payment sent OD-1179,COGS - Green coffee,14638.00,,24613.82,Origin Direct Imports,OD-1179,Paid,21/12/2025,Operating
+25/12/2025,Card settlement - cafe,Sales - Cafe,,625.94,25239.76,,,,,Operating
+26/12/2025,Card settlement - cafe,Sales - Cafe,,668.49,25908.25,,,,,Operating
+26/12/2025,Dairy Fresh Co,COGS - Dairy,466.42,,25441.83,,,,,Operating
+27/12/2025,Card settlement - cafe,Sales - Cafe,,911.55,26353.38,,,,,Operating
+28/12/2025,Card settlement - cafe,Sales - Cafe,,751.81,27105.19,,,,,Operating
+29/12/2025,Card settlement - cafe,Sales - Cafe,,664.14,27769.33,,,,,Operating
+29/12/2025,Online store payout,Sales - Online,,1947.49,29716.82,,,,,Operating
+30/12/2025,Card settlement - cafe,Sales - Cafe,,655.95,30372.77,,,,,Operating
+31/12/2025,Card settlement - cafe,Sales - Cafe,,616.65,30989.42,,,,,Operating
+31/12/2025,Cafe supplies,Supplies,132.69,,30856.73,,,,,Operating
+31/12/2025,Payroll run,Payroll,11200.00,,19656.73,Payroll,,,,Operating
+01/01/2026,Card settlement - cafe,Sales - Cafe,,644.36,20301.09,,,,,Operating
+01/01/2026,Cafe supplies,Supplies,152.00,,20149.09,,,,,Operating
+01/01/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,15349.09,Harbor Property Group,,,,Operating
+02/01/2026,Card settlement - cafe,Sales - Cafe,,673.89,16022.98,,,,,Operating
+02/01/2026,Dairy Fresh Co,COGS - Dairy,523.63,,15499.35,,,,,Operating
+03/01/2026,Card settlement - cafe,Sales - Cafe,,1103.81,16603.16,,,,,Operating
+03/01/2026,Shopify subscription,Software,79.00,,16524.16,Shopify,,,,Operating
+04/01/2026,Card settlement - cafe,Sales - Cafe,,951.20,17475.36,,,,,Operating
+04/01/2026,Square subscription,Software,89.00,,17386.36,Square,,,,Operating
+04/01/2026,Payment received INV-1048,Sales - Wholesale,,4482.06,21868.42,Brightside Hotels,INV-1048,Paid,01/01/2026,Operating
+05/01/2026,Card settlement - cafe,Sales - Cafe,,656.83,22525.25,,,,,Operating
+05/01/2026,Online store payout,Sales - Online,,1848.78,24374.03,,,,,Operating
+05/01/2026,Cafe supplies,Supplies,99.57,,24274.46,,,,,Operating
+05/01/2026,Loan repayment - term loan,Loan repayment,2150.00,,22124.46,First Coastal Bank,,,,Operating
+05/01/2026,Payment received INV-1144,Sales - Wholesale,,1706.12,23830.58,Lakeview Bistros,INV-1144,Paid,01/01/2026,Operating
+06/01/2026,Card settlement - cafe,Sales - Cafe,,559.81,24390.39,,,,,Operating
+06/01/2026,Cafe supplies,Supplies,105.22,,24285.17,,,,,Operating
+06/01/2026,Xero subscription,Software,42.00,,24243.17,Xero,,,,Operating
+07/01/2026,Card settlement - cafe,Sales - Cafe,,600.70,24843.87,,,,,Operating
+08/01/2026,Card settlement - cafe,Sales - Cafe,,673.57,25517.44,,,,,Operating
+08/01/2026,Utility bill,Utilities,653.41,,24864.03,City Utilities,,,,Operating
+08/01/2026,Payment received INV-1094,Sales - Wholesale,,1758.15,26622.18,Maple Street Grocers,INV-1094,Paid,02/01/2026,Operating
+08/01/2026,Payment received INV-1119,Sales - Wholesale,,1172.16,27794.34,Northgate Offices,INV-1119,Paid,03/01/2026,Operating
+09/01/2026,Card settlement - cafe,Sales - Cafe,,777.46,28571.80,,,,,Operating
+09/01/2026,Dairy Fresh Co,COGS - Dairy,534.49,,28037.31,,,,,Operating
+09/01/2026,Payment sent PR-1193,COGS - Packaging,2215.06,,25822.25,PackRight Supplies,PR-1193,Paid,09/01/2026,Operating
+10/01/2026,Card settlement - cafe,Sales - Cafe,,1017.77,26840.02,,,,,Operating
+10/01/2026,Payment received INV-1049,Sales - Wholesale,,4243.53,31083.55,Brightside Hotels,INV-1049,Paid,10/01/2026,Operating
+11/01/2026,Card settlement - cafe,Sales - Cafe,,745.51,31829.06,,,,,Operating
+12/01/2026,Card settlement - cafe,Sales - Cafe,,582.75,32411.81,,,,,Operating
+12/01/2026,Online store payout,Sales - Online,,1917.10,34328.91,,,,,Operating
+12/01/2026,Cafe supplies,Supplies,156.93,,34171.98,,,,,Operating
+12/01/2026,Business insurance premium,Insurance,410.00,,33761.98,SafeHarbor Insurance,,,,Operating
+12/01/2026,Payment received INV-1167,Sales - Wholesale,,1144.71,34906.69,Corner Co-op,INV-1167,Paid,02/01/2026,Operating
+13/01/2026,Card settlement - cafe,Sales - Cafe,,537.18,35443.87,,,,,Operating
+14/01/2026,Card settlement - cafe,Sales - Cafe,,630.58,36074.45,,,,,Operating
+14/01/2026,Cafe supplies,Supplies,124.12,,35950.33,,,,,Operating
+15/01/2026,Card settlement - cafe,Sales - Cafe,,584.13,36534.46,,,,,Operating
+15/01/2026,Cafe supplies,Supplies,123.52,,36410.94,,,,,Operating
+15/01/2026,Payroll run,Payroll,11200.00,,25210.94,Payroll,,,,Operating
+15/01/2026,Sales tax remittance,Tax,5900.00,,19310.94,State Revenue Dept,,,,Operating
+16/01/2026,Card settlement - cafe,Sales - Cafe,,859.26,20170.20,,,,,Operating
+16/01/2026,Dairy Fresh Co,COGS - Dairy,539.49,,19630.71,,,,,Operating
+17/01/2026,Card settlement - cafe,Sales - Cafe,,1110.87,20741.58,,,,,Operating
+18/01/2026,Card settlement - cafe,Sales - Cafe,,717.91,21459.49,,,,,Operating
+18/01/2026,Payment received INV-1095,Sales - Wholesale,,2035.60,23495.09,Maple Street Grocers,INV-1095,Paid,16/01/2026,Operating
+18/01/2026,Payment received INV-1145,Sales - Wholesale,,1636.67,25131.76,Lakeview Bistros,INV-1145,Paid,15/01/2026,Operating
+19/01/2026,Card settlement - cafe,Sales - Cafe,,589.45,25721.21,,,,,Operating
+19/01/2026,Online store payout,Sales - Online,,1885.75,27606.96,,,,,Operating
+20/01/2026,Card settlement - cafe,Sales - Cafe,,639.65,28246.61,,,,,Operating
+20/01/2026,Meta Ads,Marketing,1144.51,,27102.10,Meta,,,,Operating
+20/01/2026,Payment received INV-1050,Sales - Wholesale,,4350.97,31453.07,Brightside Hotels,INV-1050,Paid,17/01/2026,Operating
+21/01/2026,Card settlement - cafe,Sales - Cafe,,572.11,32025.18,,,,,Operating
+21/01/2026,Cafe supplies,Supplies,127.88,,31897.30,,,,,Operating
+22/01/2026,Card settlement - cafe,Sales - Cafe,,753.25,32650.55,,,,,Operating
+22/01/2026,Payment received INV-1120,Sales - Wholesale,,1348.03,33998.58,Northgate Offices,INV-1120,Paid,17/01/2026,Operating
+22/01/2026,Payment sent OD-1180,COGS - Green coffee,14649.12,,19349.46,Origin Direct Imports,OD-1180,Paid,19/01/2026,Operating
+23/01/2026,Card settlement - cafe,Sales - Cafe,,825.72,20175.18,,,,,Operating
+23/01/2026,Dairy Fresh Co,COGS - Dairy,480.38,,19694.80,,,,,Operating
+24/01/2026,Card settlement - cafe,Sales - Cafe,,1122.69,20817.49,,,,,Operating
+24/01/2026,Cafe supplies,Supplies,62.81,,20754.68,,,,,Operating
+25/01/2026,Card settlement - cafe,Sales - Cafe,,808.90,21563.58,,,,,Operating
+26/01/2026,Card settlement - cafe,Sales - Cafe,,712.40,22275.98,,,,,Operating
+26/01/2026,Online store payout,Sales - Online,,2027.43,24303.41,,,,,Operating
+26/01/2026,Cafe supplies,Supplies,82.33,,24221.08,,,,,Operating
+26/01/2026,Payment received INV-1051,Sales - Wholesale,,4062.94,28284.02,Brightside Hotels,INV-1051,Paid,23/01/2026,Operating
+27/01/2026,Card settlement - cafe,Sales - Cafe,,683.72,28967.74,,,,,Operating
+28/01/2026,Card settlement - cafe,Sales - Cafe,,661.79,29629.53,,,,,Operating
+29/01/2026,Card settlement - cafe,Sales - Cafe,,750.47,30380.00,,,,,Operating
+29/01/2026,Cafe supplies,Supplies,82.04,,30297.96,,,,,Operating
+30/01/2026,Card settlement - cafe,Sales - Cafe,,826.89,31124.85,,,,,Operating
+30/01/2026,Dairy Fresh Co,COGS - Dairy,462.62,,30662.23,,,,,Operating
+31/01/2026,Card settlement - cafe,Sales - Cafe,,1003.24,31665.47,,,,,Operating
+31/01/2026,Cafe supplies,Supplies,59.77,,31605.70,,,,,Operating
+31/01/2026,Payroll run,Payroll,11200.00,,20405.70,Payroll,,,,Operating
+01/02/2026,Card settlement - cafe,Sales - Cafe,,910.36,21316.06,,,,,Operating
+01/02/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,16516.06,Harbor Property Group,,,,Operating
+02/02/2026,Card settlement - cafe,Sales - Cafe,,676.17,17192.23,,,,,Operating
+02/02/2026,Online store payout,Sales - Online,,2099.70,19291.93,,,,,Operating
+02/02/2026,Cafe supplies,Supplies,76.97,,19214.96,,,,,Operating
+03/02/2026,Card settlement - cafe,Sales - Cafe,,605.27,19820.23,,,,,Operating
+03/02/2026,Shopify subscription,Software,79.00,,19741.23,Shopify,,,,Operating
+04/02/2026,Card settlement - cafe,Sales - Cafe,,550.31,20291.54,,,,,Operating
+04/02/2026,Square subscription,Software,89.00,,20202.54,Square,,,,Operating
+04/02/2026,Payment received INV-1052,Sales - Wholesale,,4384.61,24587.15,Brightside Hotels,INV-1052,Paid,03/02/2026,Operating
+05/02/2026,Card settlement - cafe,Sales - Cafe,,617.66,25204.81,,,,,Operating
+05/02/2026,Cafe supplies,Supplies,110.83,,25093.98,,,,,Operating
+05/02/2026,Loan repayment - term loan,Loan repayment,2150.00,,22943.98,First Coastal Bank,,,,Operating
+05/02/2026,Payment received INV-1096,Sales - Wholesale,,1974.39,24918.37,Maple Street Grocers,INV-1096,Paid,02/02/2026,Operating
+06/02/2026,Card settlement - cafe,Sales - Cafe,,789.23,25707.60,,,,,Operating
+06/02/2026,Dairy Fresh Co,COGS - Dairy,573.03,,25134.57,,,,,Operating
+06/02/2026,Xero subscription,Software,42.00,,25092.57,Xero,,,,Operating
+07/02/2026,Card settlement - cafe,Sales - Cafe,,853.44,25946.01,,,,,Operating
+07/02/2026,Cafe supplies,Supplies,87.27,,25858.74,,,,,Operating
+07/02/2026,Payment received INV-1121,Sales - Wholesale,,1198.43,27057.17,Northgate Offices,INV-1121,Paid,02/02/2026,Operating
+08/02/2026,Card settlement - cafe,Sales - Cafe,,917.76,27974.93,,,,,Operating
+08/02/2026,Utility bill,Utilities,583.38,,27391.55,City Utilities,,,,Operating
+08/02/2026,Payment received INV-1146,Sales - Wholesale,,1529.75,28921.30,Lakeview Bistros,INV-1146,Paid,03/02/2026,Operating
+09/02/2026,Card settlement - cafe,Sales - Cafe,,589.66,29510.96,,,,,Operating
+09/02/2026,Online store payout,Sales - Online,,1885.24,31396.20,,,,,Operating
+09/02/2026,Payment sent PR-1194,COGS - Packaging,2157.09,,29239.11,PackRight Supplies,PR-1194,Paid,09/02/2026,Operating
+10/02/2026,Card settlement - cafe,Sales - Cafe,,650.76,29889.87,,,,,Operating
+10/02/2026,Cafe supplies,Supplies,91.45,,29798.42,,,,,Operating
+10/02/2026,Payment received INV-1053,Sales - Wholesale,,4209.06,34007.48,Brightside Hotels,INV-1053,Paid,08/02/2026,Operating
+10/02/2026,Payment received INV-1168,Sales - Wholesale,,1170.07,35177.55,Corner Co-op,INV-1168,Paid,01/02/2026,Operating
+11/02/2026,Card settlement - cafe,Sales - Cafe,,643.04,35820.59,,,,,Operating
+11/02/2026,Cafe supplies,Supplies,134.56,,35686.03,,,,,Operating
+12/02/2026,Card settlement - cafe,Sales - Cafe,,627.48,36313.51,,,,,Operating
+12/02/2026,Cafe supplies,Supplies,89.65,,36223.86,,,,,Operating
+12/02/2026,Business insurance premium,Insurance,410.00,,35813.86,SafeHarbor Insurance,,,,Operating
+13/02/2026,Card settlement - cafe,Sales - Cafe,,730.27,36544.13,,,,,Operating
+13/02/2026,Dairy Fresh Co,COGS - Dairy,550.65,,35993.48,,,,,Operating
+13/02/2026,Cafe supplies,Supplies,103.27,,35890.21,,,,,Operating
+14/02/2026,Card settlement - cafe,Sales - Cafe,,942.71,36832.92,,,,,Operating
+15/02/2026,Card settlement - cafe,Sales - Cafe,,852.80,37685.72,,,,,Operating
+15/02/2026,Payroll run,Payroll,11200.00,,26485.72,Payroll,,,,Operating
+15/02/2026,Payment received INV-1054,Sales - Wholesale,,4158.40,30644.12,Brightside Hotels,INV-1054,Paid,15/02/2026,Operating
+16/02/2026,Card settlement - cafe,Sales - Cafe,,629.62,31273.74,,,,,Operating
+16/02/2026,Online store payout,Sales - Online,,2043.45,33317.19,,,,,Operating
+16/02/2026,Cafe supplies,Supplies,139.08,,33178.11,,,,,Operating
+17/02/2026,Card settlement - cafe,Sales - Cafe,,683.44,33861.55,,,,,Operating
+17/02/2026,Cafe supplies,Supplies,146.80,,33714.75,,,,,Operating
+18/02/2026,Card settlement - cafe,Sales - Cafe,,632.05,34346.80,,,,,Operating
+18/02/2026,Cafe supplies,Supplies,108.72,,34238.08,,,,,Operating
+18/02/2026,Payment received INV-1097,Sales - Wholesale,,1900.30,36138.38,Maple Street Grocers,INV-1097,Paid,15/02/2026,Operating
+19/02/2026,Card settlement - cafe,Sales - Cafe,,563.43,36701.81,,,,,Operating
+20/02/2026,Card settlement - cafe,Sales - Cafe,,711.57,37413.38,,,,,Operating
+20/02/2026,Dairy Fresh Co,COGS - Dairy,466.98,,36946.40,,,,,Operating
+20/02/2026,Meta Ads,Marketing,1052.65,,35893.75,Meta,,,,Operating
+21/02/2026,Card settlement - cafe,Sales - Cafe,,964.51,36858.26,,,,,Operating
+21/02/2026,Payment received INV-1122,Sales - Wholesale,,1314.53,38172.79,Northgate Offices,INV-1122,Paid,16/02/2026,Operating
+21/02/2026,Payment received INV-1147,Sales - Wholesale,,1649.89,39822.68,Lakeview Bistros,INV-1147,Paid,16/02/2026,Operating
+22/02/2026,Card settlement - cafe,Sales - Cafe,,910.29,40732.97,,,,,Operating
+23/02/2026,Card settlement - cafe,Sales - Cafe,,624.09,41357.06,,,,,Operating
+23/02/2026,Online store payout,Sales - Online,,2077.38,43434.44,,,,,Operating
+23/02/2026,Cafe supplies,Supplies,162.23,,43272.21,,,,,Operating
+24/02/2026,Card settlement - cafe,Sales - Cafe,,566.46,43838.67,,,,,Operating
+24/02/2026,Cafe supplies,Supplies,72.41,,43766.26,,,,,Operating
+25/02/2026,Card settlement - cafe,Sales - Cafe,,635.45,44401.71,,,,,Operating
+25/02/2026,Payment sent OD-1181,COGS - Green coffee,13950.41,,30451.30,Origin Direct Imports,OD-1181,Paid,22/02/2026,Operating
+26/02/2026,Card settlement - cafe,Sales - Cafe,,741.80,31193.10,,,,,Operating
+26/02/2026,Cafe supplies,Supplies,113.29,,31079.81,,,,,Operating
+26/02/2026,Payment received INV-1055,Sales - Wholesale,,3769.06,34848.87,Brightside Hotels,INV-1055,Paid,24/02/2026,Operating
+27/02/2026,Card settlement - cafe,Sales - Cafe,,768.37,35617.24,,,,,Operating
+27/02/2026,Dairy Fresh Co,COGS - Dairy,484.77,,35132.47,,,,,Operating
+28/02/2026,Card settlement - cafe,Sales - Cafe,,951.16,36083.63,,,,,Operating
+28/02/2026,Payroll run,Payroll,11200.00,,24883.63,Payroll,,,,Operating
+01/03/2026,Card settlement - cafe,Sales - Cafe,,930.81,25814.44,,,,,Operating
+01/03/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,21014.44,Harbor Property Group,,,,Operating
+02/03/2026,Card settlement - cafe,Sales - Cafe,,638.30,21652.74,,,,,Operating
+02/03/2026,Online store payout,Sales - Online,,2126.39,23779.13,,,,,Operating
+02/03/2026,Cafe supplies,Supplies,146.14,,23632.99,,,,,Operating
+03/03/2026,Card settlement - cafe,Sales - Cafe,,621.56,24254.55,,,,,Operating
+03/03/2026,Shopify subscription,Software,79.00,,24175.55,Shopify,,,,Operating
+04/03/2026,Card settlement - cafe,Sales - Cafe,,568.08,24743.63,,,,,Operating
+04/03/2026,Square subscription,Software,89.00,,24654.63,Square,,,,Operating
+05/03/2026,Card settlement - cafe,Sales - Cafe,,646.27,25300.90,,,,,Operating
+05/03/2026,Cafe supplies,Supplies,127.71,,25173.19,,,,,Operating
+05/03/2026,Loan repayment - term loan,Loan repayment,2150.00,,23023.19,First Coastal Bank,,,,Operating
+06/03/2026,Card settlement - cafe,Sales - Cafe,,738.76,23761.95,,,,,Operating
+06/03/2026,Dairy Fresh Co,COGS - Dairy,533.61,,23228.34,,,,,Operating
+06/03/2026,Cafe supplies,Supplies,142.61,,23085.73,,,,,Operating
+06/03/2026,Xero subscription,Software,42.00,,23043.73,Xero,,,,Operating
+07/03/2026,Card settlement - cafe,Sales - Cafe,,986.51,24030.24,,,,,Operating
+08/03/2026,Card settlement - cafe,Sales - Cafe,,852.58,24882.82,,,,,Operating
+08/03/2026,Utility bill,Utilities,676.57,,24206.25,City Utilities,,,,Operating
+09/03/2026,Card settlement - cafe,Sales - Cafe,,663.79,24870.04,,,,,Operating
+09/03/2026,Online store payout,Sales - Online,,1837.95,26707.99,,,,,Operating
+09/03/2026,Payment received INV-1148,Sales - Wholesale,,1671.64,28379.63,Lakeview Bistros,INV-1148,Paid,04/03/2026,Operating
+10/03/2026,Card settlement - cafe,Sales - Cafe,,676.70,29056.33,,,,,Operating
+10/03/2026,Payment received INV-1056,Sales - Wholesale,,4042.24,33098.57,Brightside Hotels,INV-1056,Paid,06/03/2026,Operating
+10/03/2026,Payment received INV-1098,Sales - Wholesale,,1949.37,35047.94,Maple Street Grocers,INV-1098,Paid,06/03/2026,Operating
+11/03/2026,Card settlement - cafe,Sales - Cafe,,691.68,35739.62,,,,,Operating
+12/03/2026,Card settlement - cafe,Sales - Cafe,,623.37,36362.99,,,,,Operating
+12/03/2026,Business insurance premium,Insurance,410.00,,35952.99,SafeHarbor Insurance,,,,Operating
+12/03/2026,Payment received INV-1123,Sales - Wholesale,,1346.43,37299.42,Northgate Offices,INV-1123,Paid,06/03/2026,Operating
+12/03/2026,Payment sent PR-1195,COGS - Packaging,2352.00,,34947.42,PackRight Supplies,PR-1195,Paid,12/03/2026,Operating
+13/03/2026,Card settlement - cafe,Sales - Cafe,,865.06,35812.48,,,,,Operating
+13/03/2026,Dairy Fresh Co,COGS - Dairy,465.20,,35347.28,,,,,Operating
+14/03/2026,Card settlement - cafe,Sales - Cafe,,877.70,36224.98,,,,,Operating
+14/03/2026,Cafe supplies,Supplies,79.02,,36145.96,,,,,Operating
+14/03/2026,Payment received INV-1169,Sales - Wholesale,,1040.68,37186.64,Corner Co-op,INV-1169,Paid,04/03/2026,Operating
+15/03/2026,Card settlement - cafe,Sales - Cafe,,886.72,38073.36,,,,,Operating
+15/03/2026,Payroll run,Payroll,11750.00,,26323.36,Payroll,,,,Operating
+15/03/2026,Payment received INV-1057,Sales - Wholesale,,4352.74,30676.10,Brightside Hotels,INV-1057,Paid,12/03/2026,Operating
+16/03/2026,Card settlement - cafe,Sales - Cafe,,591.88,31267.98,,,,,Operating
+16/03/2026,Online store payout,Sales - Online,,2044.98,33312.96,,,,,Operating
+16/03/2026,Cafe supplies,Supplies,126.22,,33186.74,,,,,Operating
+17/03/2026,Card settlement - cafe,Sales - Cafe,,596.27,33783.01,,,,,Operating
+18/03/2026,Card settlement - cafe,Sales - Cafe,,560.82,34343.83,,,,,Operating
+18/03/2026,Cafe supplies,Supplies,118.67,,34225.16,,,,,Operating
+19/03/2026,Card settlement - cafe,Sales - Cafe,,707.82,34932.98,,,,,Operating
+20/03/2026,Card settlement - cafe,Sales - Cafe,,731.18,35664.16,,,,,Operating
+20/03/2026,Dairy Fresh Co,COGS - Dairy,514.18,,35149.98,,,,,Operating
+20/03/2026,Cafe supplies,Supplies,89.25,,35060.73,,,,,Operating
+20/03/2026,Meta Ads,Marketing,1115.33,,33945.40,Meta,,,,Operating
+21/03/2026,Card settlement - cafe,Sales - Cafe,,862.48,34807.88,,,,,Operating
+21/03/2026,Cafe supplies,Supplies,68.98,,34738.90,,,,,Operating
+22/03/2026,Card settlement - cafe,Sales - Cafe,,837.43,35576.33,,,,,Operating
+23/03/2026,Card settlement - cafe,Sales - Cafe,,563.13,36139.46,,,,,Operating
+23/03/2026,Online store payout,Sales - Online,,2040.56,38180.02,,,,,Operating
+23/03/2026,Cafe supplies,Supplies,127.55,,38052.47,,,,,Operating
+23/03/2026,Payment received INV-1058,Sales - Wholesale,,4466.53,42519.00,Brightside Hotels,INV-1058,Paid,20/03/2026,Operating
+23/03/2026,Payment received INV-1099,Sales - Wholesale,,2073.67,44592.67,Maple Street Grocers,INV-1099,Paid,19/03/2026,Operating
+23/03/2026,Payment received INV-1149,Sales - Wholesale,,1616.44,46209.11,Lakeview Bistros,INV-1149,Paid,19/03/2026,Operating
+24/03/2026,Card settlement - cafe,Sales - Cafe,,658.64,46867.75,,,,,Operating
+25/03/2026,Card settlement - cafe,Sales - Cafe,,734.29,47602.04,,,,,Operating
+26/03/2026,Card settlement - cafe,Sales - Cafe,,616.51,48218.55,,,,,Operating
+26/03/2026,Cafe supplies,Supplies,103.05,,48115.50,,,,,Operating
+26/03/2026,Payment received INV-1059,Sales - Wholesale,,4433.56,52549.06,Brightside Hotels,INV-1059,Paid,26/03/2026,Operating
+26/03/2026,Payment received INV-1124,Sales - Wholesale,,1333.88,53882.94,Northgate Offices,INV-1124,Paid,19/03/2026,Operating
+26/03/2026,Payment sent OD-1182,COGS - Green coffee,14490.39,,39392.55,Origin Direct Imports,OD-1182,Paid,23/03/2026,Operating
+27/03/2026,Card settlement - cafe,Sales - Cafe,,687.57,40080.12,,,,,Operating
+27/03/2026,Dairy Fresh Co,COGS - Dairy,462.63,,39617.49,,,,,Operating
+27/03/2026,Cafe supplies,Supplies,88.97,,39528.52,,,,,Operating
+28/03/2026,Card settlement - cafe,Sales - Cafe,,1106.39,40634.91,,,,,Operating
+29/03/2026,Card settlement - cafe,Sales - Cafe,,825.12,41460.03,,,,,Operating
+30/03/2026,Card settlement - cafe,Sales - Cafe,,536.98,41997.01,,,,,Operating
+30/03/2026,Online store payout,Sales - Online,,2061.15,44058.16,,,,,Operating
+31/03/2026,Card settlement - cafe,Sales - Cafe,,586.22,44644.38,,,,,Operating
+31/03/2026,Cafe supplies,Supplies,133.02,,44511.36,,,,,Operating
+31/03/2026,Payroll run,Payroll,11750.00,,32761.36,Payroll,,,,Operating
+01/04/2026,Card settlement - cafe,Sales - Cafe,,548.43,33309.79,,,,,Operating
+01/04/2026,Cafe supplies,Supplies,84.36,,33225.43,,,,,Operating
+01/04/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,28425.43,Harbor Property Group,,,,Operating
+02/04/2026,Card settlement - cafe,Sales - Cafe,,636.40,29061.83,,,,,Operating
+02/04/2026,Cafe supplies,Supplies,138.26,,28923.57,,,,,Operating
+02/04/2026,Payment received INV-1060,Sales - Wholesale,,3855.72,32779.29,Brightside Hotels,INV-1060,Paid,01/04/2026,Operating
+03/04/2026,Card settlement - cafe,Sales - Cafe,,742.09,33521.38,,,,,Operating
+03/04/2026,Dairy Fresh Co,COGS - Dairy,482.76,,33038.62,,,,,Operating
+03/04/2026,Shopify subscription,Software,79.00,,32959.62,Shopify,,,,Operating
+04/04/2026,Card settlement - cafe,Sales - Cafe,,932.85,33892.47,,,,,Operating
+04/04/2026,Cafe supplies,Supplies,133.15,,33759.32,,,,,Operating
+04/04/2026,Square subscription,Software,89.00,,33670.32,Square,,,,Operating
+05/04/2026,Card settlement - cafe,Sales - Cafe,,816.33,34486.65,,,,,Operating
+05/04/2026,Loan repayment - term loan,Loan repayment,2150.00,,32336.65,First Coastal Bank,,,,Operating
+06/04/2026,Card settlement - cafe,Sales - Cafe,,694.09,33030.74,,,,,Operating
+06/04/2026,Online store payout,Sales - Online,,2041.69,35072.43,,,,,Operating
+06/04/2026,Cafe supplies,Supplies,107.73,,34964.70,,,,,Operating
+06/04/2026,Xero subscription,Software,42.00,,34922.70,Xero,,,,Operating
+06/04/2026,Payment received INV-1150,Sales - Wholesale,,1583.44,36506.14,Lakeview Bistros,INV-1150,Paid,01/04/2026,Operating
+07/04/2026,Card settlement - cafe,Sales - Cafe,,652.73,37158.87,,,,,Operating
+07/04/2026,Payment received INV-1100,Sales - Wholesale,,1821.84,38980.71,Maple Street Grocers,INV-1100,Paid,03/04/2026,Operating
+08/04/2026,Card settlement - cafe,Sales - Cafe,,604.62,39585.33,,,,,Operating
+08/04/2026,Utility bill,Utilities,687.93,,38897.40,City Utilities,,,,Operating
+09/04/2026,Card settlement - cafe,Sales - Cafe,,639.04,39536.44,,,,,Operating
+09/04/2026,Payment sent PR-1196,COGS - Packaging,2174.26,,37362.18,PackRight Supplies,PR-1196,Paid,09/04/2026,Operating
+10/04/2026,Card settlement - cafe,Sales - Cafe,,753.36,38115.54,,,,,Operating
+10/04/2026,Dairy Fresh Co,COGS - Dairy,474.60,,37640.94,,,,,Operating
+10/04/2026,Payment received INV-1125,Sales - Wholesale,,1213.21,38854.15,Northgate Offices,INV-1125,Paid,03/04/2026,Operating
+10/04/2026,Payment received INV-1170,Sales - Wholesale,,1205.60,40059.75,Corner Co-op,INV-1170,Paid,01/04/2026,Operating
+11/04/2026,Card settlement - cafe,Sales - Cafe,,1015.35,41075.10,,,,,Operating
+11/04/2026,Payment received INV-1061,Sales - Wholesale,,4068.32,45143.42,Brightside Hotels,INV-1061,Paid,08/04/2026,Operating
+12/04/2026,Card settlement - cafe,Sales - Cafe,,729.87,45873.29,,,,,Operating
+12/04/2026,Business insurance premium,Insurance,410.00,,45463.29,SafeHarbor Insurance,,,,Operating
+13/04/2026,Card settlement - cafe,Sales - Cafe,,616.17,46079.46,,,,,Operating
+13/04/2026,Online store payout,Sales - Online,,1833.31,47912.77,,,,,Operating
+13/04/2026,Cafe supplies,Supplies,84.08,,47828.69,,,,,Operating
+14/04/2026,Card settlement - cafe,Sales - Cafe,,695.32,48524.01,,,,,Operating
+15/04/2026,Card settlement - cafe,Sales - Cafe,,582.32,49106.33,,,,,Operating
+15/04/2026,Cafe supplies,Supplies,87.14,,49019.19,,,,,Operating
+15/04/2026,Payroll run,Payroll,11750.00,,37269.19,Payroll,,,,Operating
+15/04/2026,Sales tax remittance,Tax,5900.00,,31369.19,State Revenue Dept,,,,Operating
+16/04/2026,Card settlement - cafe,Sales - Cafe,,664.01,32033.20,,,,,Operating
+16/04/2026,Cafe supplies,Supplies,128.52,,31904.68,,,,,Operating
+17/04/2026,Card settlement - cafe,Sales - Cafe,,710.25,32614.93,,,,,Operating
+17/04/2026,Dairy Fresh Co,COGS - Dairy,491.19,,32123.74,,,,,Operating
+18/04/2026,Card settlement - cafe,Sales - Cafe,,1016.98,33140.72,,,,,Operating
+18/04/2026,Cafe supplies,Supplies,55.55,,33085.17,,,,,Operating
+19/04/2026,Card settlement - cafe,Sales - Cafe,,948.79,34033.96,,,,,Operating
+19/04/2026,Payment received INV-1062,Sales - Wholesale,,4402.17,38436.13,Brightside Hotels,INV-1062,Paid,16/04/2026,Operating
+19/04/2026,Payment received INV-1151,Sales - Wholesale,,1689.40,40125.53,Lakeview Bistros,INV-1151,Paid,16/04/2026,Operating
+20/04/2026,Card settlement - cafe,Sales - Cafe,,537.60,40663.13,,,,,Operating
+20/04/2026,Online store payout,Sales - Online,,1867.42,42530.55,,,,,Operating
+20/04/2026,Meta Ads,Marketing,1267.99,,41262.56,Meta,,,,Operating
+21/04/2026,Card settlement - cafe,Sales - Cafe,,539.60,41802.16,,,,,Operating
+21/04/2026,Payment received INV-1101,Sales - Wholesale,,2087.00,43889.16,Maple Street Grocers,INV-1101,Paid,16/04/2026,Operating
+22/04/2026,Card settlement - cafe,Sales - Cafe,,690.50,44579.66,,,,,Operating
+23/04/2026,Card settlement - cafe,Sales - Cafe,,684.75,45264.41,,,,,Operating
+23/04/2026,Payment received INV-1126,Sales - Wholesale,,1328.40,46592.81,Northgate Offices,INV-1126,Paid,17/04/2026,Operating
+24/04/2026,Card settlement - cafe,Sales - Cafe,,673.56,47266.37,,,,,Operating
+24/04/2026,Dairy Fresh Co,COGS - Dairy,515.02,,46751.35,,,,,Operating
+25/04/2026,Card settlement - cafe,Sales - Cafe,,871.79,47623.14,,,,,Operating
+26/04/2026,Card settlement - cafe,Sales - Cafe,,962.58,48585.72,,,,,Operating
+26/04/2026,Payment received INV-1063,Sales - Wholesale,,3766.33,52352.05,Brightside Hotels,INV-1063,Paid,24/04/2026,Operating
+26/04/2026,Payment sent OD-1183,COGS - Green coffee,14573.45,,37778.60,Origin Direct Imports,OD-1183,Paid,23/04/2026,Operating
+27/04/2026,Card settlement - cafe,Sales - Cafe,,652.75,38431.35,,,,,Operating
+27/04/2026,Online store payout,Sales - Online,,1983.52,40414.87,,,,,Operating
+28/04/2026,Card settlement - cafe,Sales - Cafe,,546.49,40961.36,,,,,Operating
+29/04/2026,Card settlement - cafe,Sales - Cafe,,546.19,41507.55,,,,,Operating
+30/04/2026,Card settlement - cafe,Sales - Cafe,,629.11,42136.66,,,,,Operating
+30/04/2026,Payroll run,Payroll,11750.00,,30386.66,Payroll,,,,Operating
+01/05/2026,Card settlement - cafe,Sales - Cafe,,789.13,31175.79,,,,,Operating
+01/05/2026,Dairy Fresh Co,COGS - Dairy,505.74,,30670.05,,,,,Operating
+01/05/2026,Cafe supplies,Supplies,79.56,,30590.49,,,,,Operating
+01/05/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,25790.49,Harbor Property Group,,,,Operating
+02/05/2026,Card settlement - cafe,Sales - Cafe,,1122.08,26912.57,,,,,Operating
+03/05/2026,Card settlement - cafe,Sales - Cafe,,744.53,27657.10,,,,,Operating
+03/05/2026,Shopify subscription,Software,79.00,,27578.10,Shopify,,,,Operating
+04/05/2026,Card settlement - cafe,Sales - Cafe,,568.58,28146.68,,,,,Operating
+04/05/2026,Online store payout,Sales - Online,,1949.70,30096.38,,,,,Operating
+04/05/2026,Cafe supplies,Supplies,158.90,,29937.48,,,,,Operating
+04/05/2026,Square subscription,Software,89.00,,29848.48,Square,,,,Operating
+05/05/2026,Card settlement - cafe,Sales - Cafe,,637.33,30485.81,,,,,Operating
+05/05/2026,Cafe supplies,Supplies,105.49,,30380.32,,,,,Operating
+05/05/2026,Loan repayment - term loan,Loan repayment,2150.00,,28230.32,First Coastal Bank,,,,Operating
+05/05/2026,Payment received INV-1152,Sales - Wholesale,,1744.08,29974.40,Lakeview Bistros,INV-1152,Paid,03/05/2026,Operating
+06/05/2026,Card settlement - cafe,Sales - Cafe,,547.11,30521.51,,,,,Operating
+06/05/2026,Cafe supplies,Supplies,157.67,,30363.84,,,,,Operating
+06/05/2026,Xero subscription,Software,42.00,,30321.84,Xero,,,,Operating
+07/05/2026,Card settlement - cafe,Sales - Cafe,,695.52,31017.36,,,,,Operating
+08/05/2026,Card settlement - cafe,Sales - Cafe,,856.28,31873.64,,,,,Operating
+08/05/2026,Dairy Fresh Co,COGS - Dairy,505.46,,31368.18,,,,,Operating
+08/05/2026,Utility bill,Utilities,665.87,,30702.31,City Utilities,,,,Operating
+08/05/2026,Payment received INV-1127,Sales - Wholesale,,1293.11,31995.42,Northgate Offices,INV-1127,Paid,03/05/2026,Operating
+09/05/2026,Card settlement - cafe,Sales - Cafe,,1033.97,33029.39,,,,,Operating
+09/05/2026,Cafe supplies,Supplies,72.73,,32956.66,,,,,Operating
+10/05/2026,Card settlement - cafe,Sales - Cafe,,894.09,33850.75,,,,,Operating
+10/05/2026,Payment received INV-1064,Sales - Wholesale,,4000.02,37850.77,Brightside Hotels,INV-1064,Paid,04/05/2026,Operating
+10/05/2026,Payment received INV-1102,Sales - Wholesale,,1961.55,39812.32,Maple Street Grocers,INV-1102,Paid,04/05/2026,Operating
+10/05/2026,Payment sent PR-1197,COGS - Packaging,2179.50,,37632.82,PackRight Supplies,PR-1197,Paid,10/05/2026,Operating
+11/05/2026,Card settlement - cafe,Sales - Cafe,,553.64,38186.46,,,,,Operating
+11/05/2026,Online store payout,Sales - Online,,2214.72,40401.18,,,,,Operating
+12/05/2026,Card settlement - cafe,Sales - Cafe,,643.05,41044.23,,,,,Operating
+12/05/2026,Business insurance premium,Insurance,410.00,,40634.23,SafeHarbor Insurance,,,,Operating
+12/05/2026,Payment received INV-1171,Sales - Wholesale,,1141.90,41776.13,Corner Co-op,INV-1171,Paid,04/05/2026,Operating
+13/05/2026,Card settlement - cafe,Sales - Cafe,,697.46,42473.59,,,,,Operating
+13/05/2026,Cafe supplies,Supplies,71.76,,42401.83,,,,,Operating
+14/05/2026,Card settlement - cafe,Sales - Cafe,,600.01,43001.84,,,,,Operating
+14/05/2026,Cafe supplies,Supplies,84.79,,42917.05,,,,,Operating
+15/05/2026,Card settlement - cafe,Sales - Cafe,,756.55,43673.60,,,,,Operating
+15/05/2026,Dairy Fresh Co,COGS - Dairy,473.06,,43200.54,,,,,Operating
+15/05/2026,Payroll run,Payroll,11750.00,,31450.54,Payroll,,,,Operating
+16/05/2026,Card settlement - cafe,Sales - Cafe,,1038.98,32489.52,,,,,Operating
+16/05/2026,Cafe supplies,Supplies,79.97,,32409.55,,,,,Operating
+17/05/2026,Card settlement - cafe,Sales - Cafe,,892.32,33301.87,,,,,Operating
+17/05/2026,Payment received INV-1065,Sales - Wholesale,,3994.63,37296.50,Brightside Hotels,INV-1065,Paid,10/05/2026,Operating
+18/05/2026,Card settlement - cafe,Sales - Cafe,,691.91,37988.41,,,,,Operating
+18/05/2026,Online store payout,Sales - Online,,2223.58,40211.99,,,,,Operating
+18/05/2026,Cafe supplies,Supplies,144.91,,40067.08,,,,,Operating
+19/05/2026,Card settlement - cafe,Sales - Cafe,,620.21,40687.29,,,,,Operating
+19/05/2026,Payment received INV-1153,Sales - Wholesale,,1657.26,42344.55,Lakeview Bistros,INV-1153,Paid,16/05/2026,Operating
+20/05/2026,Card settlement - cafe,Sales - Cafe,,628.15,42972.70,,,,,Operating
+20/05/2026,Meta Ads,Marketing,1113.34,,41859.36,Meta,,,,Operating
+21/05/2026,Card settlement - cafe,Sales - Cafe,,629.39,42488.75,,,,,Operating
+21/05/2026,Payment received INV-1103,Sales - Wholesale,,2076.20,44564.95,Maple Street Grocers,INV-1103,Paid,16/05/2026,Operating
+22/05/2026,Card settlement - cafe,Sales - Cafe,,786.59,45351.54,,,,,Operating
+22/05/2026,Dairy Fresh Co,COGS - Dairy,511.82,,44839.72,,,,,Operating
+22/05/2026,Cafe supplies,Supplies,140.72,,44699.00,,,,,Operating
+22/05/2026,Payment received INV-1128,Sales - Wholesale,,1306.51,46005.51,Northgate Offices,INV-1128,Paid,16/05/2026,Operating
+23/05/2026,Card settlement - cafe,Sales - Cafe,,1007.93,47013.44,,,,,Operating
+23/05/2026,Cafe supplies,Supplies,132.34,,46881.10,,,,,Operating
+24/05/2026,Card settlement - cafe,Sales - Cafe,,935.25,47816.35,,,,,Operating
+25/05/2026,Card settlement - cafe,Sales - Cafe,,572.23,48388.58,,,,,Operating
+25/05/2026,Online store payout,Sales - Online,,1943.03,50331.61,,,,,Operating
+25/05/2026,Payment sent OD-1184,COGS - Green coffee,14325.24,,36006.37,Origin Direct Imports,OD-1184,Paid,22/05/2026,Operating
+26/05/2026,Card settlement - cafe,Sales - Cafe,,666.69,36673.06,,,,,Operating
+27/05/2026,Card settlement - cafe,Sales - Cafe,,578.60,37251.66,,,,,Operating
+27/05/2026,Payment received INV-1066,Sales - Wholesale,,4153.36,41405.02,Brightside Hotels,INV-1066,Paid,17/05/2026,Operating
+28/05/2026,Card settlement - cafe,Sales - Cafe,,645.79,42050.81,,,,,Operating
+28/05/2026,Cafe supplies,Supplies,114.59,,41936.22,,,,,Operating
+29/05/2026,Card settlement - cafe,Sales - Cafe,,768.80,42705.02,,,,,Operating
+29/05/2026,Dairy Fresh Co,COGS - Dairy,576.03,,42128.99,,,,,Operating
+30/05/2026,Card settlement - cafe,Sales - Cafe,,842.81,42971.80,,,,,Operating
+31/05/2026,Card settlement - cafe,Sales - Cafe,,933.48,43905.28,,,,,Operating
+31/05/2026,Payroll run,Payroll,11750.00,,32155.28,Payroll,,,,Operating
+01/06/2026,Card settlement - cafe,Sales - Cafe,,596.11,32751.39,,,,,Operating
+01/06/2026,Online store payout,Sales - Online,,2036.10,34787.49,,,,,Operating
+01/06/2026,Cafe supplies,Supplies,71.17,,34716.32,,,,,Operating
+01/06/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,29916.32,Harbor Property Group,,,,Operating
+02/06/2026,Card settlement - cafe,Sales - Cafe,,553.48,30469.80,,,,,Operating
+03/06/2026,Card settlement - cafe,Sales - Cafe,,478.34,30948.14,,,,,Operating
+03/06/2026,Cafe supplies,Supplies,65.59,,30882.55,,,,,Operating
+03/06/2026,Shopify subscription,Software,79.00,,30803.55,Shopify,,,,Operating
+03/06/2026,Payment received INV-1067,Sales - Wholesale,,3755.28,34558.83,Brightside Hotels,INV-1067,Paid,25/05/2026,Operating
+04/06/2026,Card settlement - cafe,Sales - Cafe,,586.39,35145.22,,,,,Operating
+04/06/2026,Cafe supplies,Supplies,133.70,,35011.52,,,,,Operating
+04/06/2026,Square subscription,Software,89.00,,34922.52,Square,,,,Operating
+05/06/2026,Card settlement - cafe,Sales - Cafe,,570.54,35493.06,,,,,Operating
+05/06/2026,Dairy Fresh Co,COGS - Dairy,518.09,,34974.97,,,,,Operating
+05/06/2026,Cafe supplies,Supplies,90.32,,34884.65,,,,,Operating
+05/06/2026,Loan repayment - term loan,Loan repayment,2150.00,,32734.65,First Coastal Bank,,,,Operating
+05/06/2026,Payment received INV-1154,Sales - Wholesale,,1811.79,34546.44,Lakeview Bistros,INV-1154,Paid,03/06/2026,Operating
+06/06/2026,Card settlement - cafe,Sales - Cafe,,831.15,35377.59,,,,,Operating
+06/06/2026,Xero subscription,Software,42.00,,35335.59,Xero,,,,Operating
+07/06/2026,Card settlement - cafe,Sales - Cafe,,697.22,36032.81,,,,,Operating
+07/06/2026,Payment received INV-1104,Sales - Wholesale,,1958.16,37990.97,Maple Street Grocers,INV-1104,Paid,01/06/2026,Operating
+08/06/2026,Card settlement - cafe,Sales - Cafe,,498.11,38489.08,,,,,Operating
+08/06/2026,Online store payout,Sales - Online,,2393.25,40882.33,,,,,Operating
+08/06/2026,Utility bill,Utilities,592.75,,40289.58,City Utilities,,,,Operating
+08/06/2026,Payment received INV-1129,Sales - Wholesale,,1141.58,41431.16,Northgate Offices,INV-1129,Paid,02/06/2026,Operating
+08/06/2026,Payment received INV-1172,Sales - Wholesale,,1028.36,42459.52,Corner Co-op,INV-1172,Paid,01/06/2026,Operating
+09/06/2026,Card settlement - cafe,Sales - Cafe,,495.03,42954.55,,,,,Operating
+09/06/2026,Cafe supplies,Supplies,99.67,,42854.88,,,,,Operating
+09/06/2026,Payment sent PR-1198,COGS - Packaging,2164.00,,40690.88,PackRight Supplies,PR-1198,Paid,09/06/2026,Operating
+10/06/2026,Card settlement - cafe,Sales - Cafe,,591.48,41282.36,,,,,Operating
+11/06/2026,Card settlement - cafe,Sales - Cafe,,534.86,41817.22,,,,,Operating
+11/06/2026,Cafe supplies,Supplies,120.24,,41696.98,,,,,Operating
+12/06/2026,Card settlement - cafe,Sales - Cafe,,730.76,42427.74,,,,,Operating
+12/06/2026,Dairy Fresh Co,COGS - Dairy,524.68,,41903.06,,,,,Operating
+12/06/2026,Cafe supplies,Supplies,124.25,,41778.81,,,,,Operating
+12/06/2026,Business insurance premium,Insurance,410.00,,41368.81,SafeHarbor Insurance,,,,Operating
+13/06/2026,Card settlement - cafe,Sales - Cafe,,725.31,42094.12,,,,,Operating
+13/06/2026,Cafe supplies,Supplies,138.61,,41955.51,,,,,Operating
+14/06/2026,Card settlement - cafe,Sales - Cafe,,634.44,42589.95,,,,,Operating
+14/06/2026,Payment received INV-1068,Sales - Wholesale,,3790.64,46380.59,Brightside Hotels,INV-1068,Paid,02/06/2026,Operating
+15/06/2026,Card settlement - cafe,Sales - Cafe,,543.10,46923.69,,,,,Operating
+15/06/2026,Online store payout,Sales - Online,,1989.62,48913.31,,,,,Operating
+15/06/2026,Payroll run,Payroll,11750.00,,37163.31,Payroll,,,,Operating
+16/06/2026,Card settlement - cafe,Sales - Cafe,,526.10,37689.41,,,,,Operating
+17/06/2026,Card settlement - cafe,Sales - Cafe,,615.14,38304.55,,,,,Operating
+17/06/2026,Cafe supplies,Supplies,92.77,,38211.78,,,,,Operating
+18/06/2026,Card settlement - cafe,Sales - Cafe,,588.24,38800.02,,,,,Operating
+19/06/2026,Card settlement - cafe,Sales - Cafe,,733.15,39533.17,,,,,Operating
+19/06/2026,Dairy Fresh Co,COGS - Dairy,466.95,,39066.22,,,,,Operating
+19/06/2026,Cafe supplies,Supplies,94.58,,38971.64,,,,,Operating
+20/06/2026,Card settlement - cafe,Sales - Cafe,,796.13,39767.77,,,,,Operating
+20/06/2026,Meta Ads,Marketing,1256.82,,38510.95,Meta,,,,Operating
+20/06/2026,Payment received INV-1155,Sales - Wholesale,,1627.48,40138.43,Lakeview Bistros,INV-1155,Paid,17/06/2026,Operating
+21/06/2026,Card settlement - cafe,Sales - Cafe,,820.43,40958.86,,,,,Operating
+21/06/2026,Payment received INV-1105,Sales - Wholesale,,1785.81,42744.67,Maple Street Grocers,INV-1105,Paid,17/06/2026,Operating
+22/06/2026,Card settlement - cafe,Sales - Cafe,,456.46,43201.13,,,,,Operating
+22/06/2026,Online store payout,Sales - Online,,2218.55,45419.68,,,,,Operating
+22/06/2026,Payment received INV-1130,Sales - Wholesale,,1291.66,46711.34,Northgate Offices,INV-1130,Paid,17/06/2026,Operating
+23/06/2026,Card settlement - cafe,Sales - Cafe,,552.87,47264.21,,,,,Operating
+24/06/2026,Card settlement - cafe,Sales - Cafe,,601.35,47865.56,,,,,Operating
+24/06/2026,Payment received INV-1069,Sales - Wholesale,,4292.34,52157.90,Brightside Hotels,INV-1069,Paid,10/06/2026,Operating
+25/06/2026,Card settlement - cafe,Sales - Cafe,,514.44,52672.34,,,,,Operating
+25/06/2026,Cafe supplies,Supplies,57.79,,52614.55,,,,,Operating
+25/06/2026,Payment sent OD-1185,COGS - Green coffee,14968.84,,37645.71,Origin Direct Imports,OD-1185,Paid,22/06/2026,Operating
+26/06/2026,Card settlement - cafe,Sales - Cafe,,579.14,38224.85,,,,,Operating
+26/06/2026,Dairy Fresh Co,COGS - Dairy,524.27,,37700.58,,,,,Operating
+27/06/2026,Card settlement - cafe,Sales - Cafe,,947.93,38648.51,,,,,Operating
+27/06/2026,Cafe supplies,Supplies,85.25,,38563.26,,,,,Operating
+28/06/2026,Card settlement - cafe,Sales - Cafe,,698.84,39262.10,,,,,Operating
+29/06/2026,Card settlement - cafe,Sales - Cafe,,542.59,39804.69,,,,,Operating
+29/06/2026,Online store payout,Sales - Online,,2001.05,41805.74,,,,,Operating
+30/06/2026,Card settlement - cafe,Sales - Cafe,,572.03,42377.77,,,,,Operating
+30/06/2026,Payroll run,Payroll,11750.00,,30627.77,Payroll,,,,Operating
+01/07/2026,Card settlement - cafe,Sales - Cafe,,581.59,31209.36,,,,,Operating
+01/07/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,26409.36,Harbor Property Group,,,,Operating
+02/07/2026,Card settlement - cafe,Sales - Cafe,,598.22,27007.58,,,,,Operating
+02/07/2026,Payment received INV-1070,Sales - Wholesale,,3829.80,30837.38,Brightside Hotels,INV-1070,Paid,17/06/2026,Operating
+03/07/2026,Card settlement - cafe,Sales - Cafe,,617.32,31454.70,,,,,Operating
+03/07/2026,Dairy Fresh Co,COGS - Dairy,476.46,,30978.24,,,,,Operating
+03/07/2026,Shopify subscription,Software,79.00,,30899.24,Shopify,,,,Operating
+04/07/2026,Card settlement - cafe,Sales - Cafe,,718.90,31618.14,,,,,Operating
+04/07/2026,Cafe supplies,Supplies,113.51,,31504.63,,,,,Operating
+04/07/2026,Square subscription,Software,89.00,,31415.63,Square,,,,Operating
+05/07/2026,Card settlement - cafe,Sales - Cafe,,778.37,32194.00,,,,,Operating
+05/07/2026,Loan repayment - term loan,Loan repayment,2150.00,,30044.00,First Coastal Bank,,,,Operating
+06/07/2026,Card settlement - cafe,Sales - Cafe,,579.07,30623.07,,,,,Operating
+06/07/2026,Online store payout,Sales - Online,,2382.06,33005.13,,,,,Operating
+06/07/2026,Xero subscription,Software,42.00,,32963.13,Xero,,,,Operating
+06/07/2026,Payment received INV-1156,Sales - Wholesale,,1510.86,34473.99,Lakeview Bistros,INV-1156,Paid,03/07/2026,Operating
+07/07/2026,Card settlement - cafe,Sales - Cafe,,570.56,35044.55,,,,,Operating
+07/07/2026,Cafe supplies,Supplies,66.93,,34977.62,,,,,Operating
+07/07/2026,Payment received INV-1071,Sales - Wholesale,,4349.18,39326.80,Brightside Hotels,INV-1071,Paid,23/06/2026,Operating
+08/07/2026,Card settlement - cafe,Sales - Cafe,,472.14,39798.94,,,,,Operating
+08/07/2026,Cafe supplies,Supplies,57.11,,39741.83,,,,,Operating
+08/07/2026,Utility bill,Utilities,670.63,,39071.20,City Utilities,,,,Operating
+09/07/2026,Card settlement - cafe,Sales - Cafe,,565.73,39636.93,,,,,Operating
+09/07/2026,Cafe supplies,Supplies,105.18,,39531.75,,,,,Operating
+09/07/2026,Payment received INV-1106,Sales - Wholesale,,1744.37,41276.12,Maple Street Grocers,INV-1106,Paid,03/07/2026,Operating
+09/07/2026,Payment received INV-1131,Sales - Wholesale,,1366.35,42642.47,Northgate Offices,INV-1131,Paid,04/07/2026,Operating
+10/07/2026,Card settlement - cafe,Sales - Cafe,,605.06,43247.53,,,,,Operating
+10/07/2026,Dairy Fresh Co,COGS - Dairy,535.65,,42711.88,,,,,Operating
+10/07/2026,Payment received INV-1173,Sales - Wholesale,,1132.57,43844.45,Corner Co-op,INV-1173,Paid,04/07/2026,Operating
+10/07/2026,Payment sent PR-1199,COGS - Packaging,2125.79,,41718.66,PackRight Supplies,PR-1199,Paid,10/07/2026,Operating
+11/07/2026,Card settlement - cafe,Sales - Cafe,,810.18,42528.84,,,,,Operating
+11/07/2026,Cafe supplies,Supplies,110.90,,42417.94,,,,,Operating
+12/07/2026,Card settlement - cafe,Sales - Cafe,,784.57,43202.51,,,,,Operating
+12/07/2026,Business insurance premium,Insurance,410.00,,42792.51,SafeHarbor Insurance,,,,Operating
+13/07/2026,Card settlement - cafe,Sales - Cafe,,598.68,43391.19,,,,,Operating
+13/07/2026,Online store payout,Sales - Online,,2386.56,45777.75,,,,,Operating
+14/07/2026,Card settlement - cafe,Sales - Cafe,,469.07,46246.82,,,,,Operating
+14/07/2026,Cafe supplies,Supplies,67.25,,46179.57,,,,,Operating
+15/07/2026,Card settlement - cafe,Sales - Cafe,,574.61,46754.18,,,,,Operating
+15/07/2026,Payroll run,Payroll,11750.00,,35004.18,Payroll,,,,Operating
+15/07/2026,Sales tax remittance,Tax,5900.00,,29104.18,State Revenue Dept,,,,Operating
+16/07/2026,Card settlement - cafe,Sales - Cafe,,497.53,29601.71,,,,,Operating
+17/07/2026,Card settlement - cafe,Sales - Cafe,,688.26,30289.97,,,,,Operating
+17/07/2026,Dairy Fresh Co,COGS - Dairy,492.04,,29797.93,,,,,Operating
+18/07/2026,Card settlement - cafe,Sales - Cafe,,833.88,30631.81,,,,,Operating
+18/07/2026,Cafe supplies,Supplies,121.02,,30510.79,,,,,Operating
+19/07/2026,Card settlement - cafe,Sales - Cafe,,647.24,31158.03,,,,,Operating
+20/07/2026,Card settlement - cafe,Sales - Cafe,,505.23,31663.26,,,,,Operating
+20/07/2026,Online store payout,Sales - Online,,2389.91,34053.17,,,,,Operating
+20/07/2026,Cafe supplies,Supplies,125.89,,33927.28,,,,,Operating
+20/07/2026,Meta Ads,Marketing,1268.79,,32658.49,Meta,,,,Operating
+21/07/2026,Card settlement - cafe,Sales - Cafe,,509.33,33167.82,,,,,Operating
+21/07/2026,Cafe supplies,Supplies,102.66,,33065.16,,,,,Operating
+22/07/2026,Card settlement - cafe,Sales - Cafe,,568.58,33633.74,,,,,Operating
+22/07/2026,Payment received INV-1107,Sales - Wholesale,,1778.63,35412.37,Maple Street Grocers,INV-1107,Paid,18/07/2026,Operating
+23/07/2026,Card settlement - cafe,Sales - Cafe,,492.38,35904.75,,,,,Operating
+23/07/2026,Payment received INV-1072,Sales - Wholesale,,4166.67,40071.42,Brightside Hotels,INV-1072,Paid,03/07/2026,Operating
+23/07/2026,Payment received INV-1157,Sales - Wholesale,,1614.42,41685.84,Lakeview Bistros,INV-1157,Paid,18/07/2026,Operating
+24/07/2026,Card settlement - cafe,Sales - Cafe,,593.70,42279.54,,,,,Operating
+24/07/2026,Dairy Fresh Co,COGS - Dairy,483.92,,41795.62,,,,,Operating
+24/07/2026,Payment received INV-1132,Sales - Wholesale,,1161.58,42957.20,Northgate Offices,INV-1132,Paid,18/07/2026,Operating
+25/07/2026,Card settlement - cafe,Sales - Cafe,,880.85,43838.05,,,,,Operating
+26/07/2026,Card settlement - cafe,Sales - Cafe,,723.93,44561.98,,,,,Operating
+26/07/2026,Payment sent OD-1186,COGS - Green coffee,14615.67,,29946.31,Origin Direct Imports,OD-1186,Paid,23/07/2026,Operating
+27/07/2026,Card settlement - cafe,Sales - Cafe,,509.26,30455.57,,,,,Operating
+27/07/2026,Online store payout,Sales - Online,,2296.04,32751.61,,,,,Operating
+27/07/2026,Cafe supplies,Supplies,117.77,,32633.84,,,,,Operating
+28/07/2026,Card settlement - cafe,Sales - Cafe,,476.34,33110.18,,,,,Operating
+28/07/2026,Cafe supplies,Supplies,64.13,,33046.05,,,,,Operating
+28/07/2026,Payment received INV-1073,Sales - Wholesale,,4396.35,37442.40,Brightside Hotels,INV-1073,Paid,09/07/2026,Operating
+29/07/2026,Card settlement - cafe,Sales - Cafe,,619.66,38062.06,,,,,Operating
+29/07/2026,Cafe supplies,Supplies,152.12,,37909.94,,,,,Operating
+30/07/2026,Card settlement - cafe,Sales - Cafe,,610.85,38520.79,,,,,Operating
+31/07/2026,Card settlement - cafe,Sales - Cafe,,735.59,39256.38,,,,,Operating
+31/07/2026,Dairy Fresh Co,COGS - Dairy,555.94,,38700.44,,,,,Operating
+31/07/2026,Payroll run,Payroll,11750.00,,26950.44,Payroll,,,,Operating
+01/08/2026,Card settlement - cafe,Sales - Cafe,,901.06,27851.50,,,,,Operating
+01/08/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,23051.50,Harbor Property Group,,,,Operating
+02/08/2026,Card settlement - cafe,Sales - Cafe,,779.69,23831.19,,,,,Operating
+03/08/2026,Card settlement - cafe,Sales - Cafe,,557.61,24388.80,,,,,Operating
+03/08/2026,Online store payout,Sales - Online,,1985.13,26373.93,,,,,Operating
+03/08/2026,Shopify subscription,Software,79.00,,26294.93,Shopify,,,,Operating
+04/08/2026,Card settlement - cafe,Sales - Cafe,,507.96,26802.89,,,,,Operating
+04/08/2026,Cafe supplies,Supplies,142.54,,26660.35,,,,,Operating
+04/08/2026,Square subscription,Software,89.00,,26571.35,Square,,,,Operating
+05/08/2026,Card settlement - cafe,Sales - Cafe,,595.01,27166.36,,,,,Operating
+05/08/2026,Loan repayment - term loan,Loan repayment,2150.00,,25016.36,First Coastal Bank,,,,Operating
+05/08/2026,Payment received INV-1074,Sales - Wholesale,,3744.59,28760.95,Brightside Hotels,INV-1074,Paid,17/07/2026,Operating
+06/08/2026,Card settlement - cafe,Sales - Cafe,,541.52,29302.47,,,,,Operating
+06/08/2026,Cafe supplies,Supplies,141.10,,29161.37,,,,,Operating
+06/08/2026,Xero subscription,Software,42.00,,29119.37,Xero,,,,Operating
+06/08/2026,Payment received INV-1108,Sales - Wholesale,,1717.16,30836.53,Maple Street Grocers,INV-1108,Paid,03/08/2026,Operating
+07/08/2026,Card settlement - cafe,Sales - Cafe,,651.08,31487.61,,,,,Operating
+07/08/2026,Dairy Fresh Co,COGS - Dairy,516.32,,30971.29,,,,,Operating
+07/08/2026,Payment received INV-1133,Sales - Wholesale,,1329.72,32301.01,Northgate Offices,INV-1133,Paid,03/08/2026,Operating
+07/08/2026,Payment received INV-1158,Sales - Wholesale,,1761.61,34062.62,Lakeview Bistros,INV-1158,Paid,02/08/2026,Operating
+08/08/2026,Card settlement - cafe,Sales - Cafe,,914.76,34977.38,,,,,Operating
+08/08/2026,Cafe supplies,Supplies,93.38,,34884.00,,,,,Operating
+08/08/2026,Utility bill,Utilities,669.91,,34214.09,City Utilities,,,,Operating
+09/08/2026,Card settlement - cafe,Sales - Cafe,,668.30,34882.39,,,,,Operating
+09/08/2026,Payment received INV-1174,Sales - Wholesale,,1036.88,35919.27,Corner Co-op,INV-1174,Paid,01/08/2026,Operating
+09/08/2026,Payment sent PR-1200,COGS - Packaging,2296.28,,33622.99,PackRight Supplies,PR-1200,Paid,09/08/2026,Operating
+10/08/2026,Card settlement - cafe,Sales - Cafe,,557.74,34180.73,,,,,Operating
+10/08/2026,Online store payout,Sales - Online,,2064.32,36245.05,,,,,Operating
+11/08/2026,Card settlement - cafe,Sales - Cafe,,541.63,36786.68,,,,,Operating
+12/08/2026,Card settlement - cafe,Sales - Cafe,,564.91,37351.59,,,,,Operating
+12/08/2026,Business insurance premium,Insurance,410.00,,36941.59,SafeHarbor Insurance,,,,Operating
+12/08/2026,Payment received INV-1075,Sales - Wholesale,,3983.48,40925.07,Brightside Hotels,INV-1075,Paid,24/07/2026,Operating
+13/08/2026,Card settlement - cafe,Sales - Cafe,,555.81,41480.88,,,,,Operating
+13/08/2026,Cafe supplies,Supplies,81.73,,41399.15,,,,,Operating
+14/08/2026,Card settlement - cafe,Sales - Cafe,,560.33,41959.48,,,,,Operating
+14/08/2026,Dairy Fresh Co,COGS - Dairy,545.36,,41414.12,,,,,Operating
+15/08/2026,Card settlement - cafe,Sales - Cafe,,928.64,42342.76,,,,,Operating
+15/08/2026,Payroll run,Payroll,11750.00,,30592.76,Payroll,,,,Operating
+16/08/2026,Card settlement - cafe,Sales - Cafe,,701.54,31294.30,,,,,Operating
+17/08/2026,Card settlement - cafe,Sales - Cafe,,483.18,31777.48,,,,,Operating
+17/08/2026,Online store payout,Sales - Online,,2471.07,34248.55,,,,,Operating
+17/08/2026,Invoice INV-1082,Sales - Wholesale,,4467.25,,Brightside Hotels,INV-1082,Overdue,16/09/2026,Operating
+18/08/2026,Card settlement - cafe,Sales - Cafe,,512.24,34760.79,,,,,Operating
+18/08/2026,Payment received INV-1159,Sales - Wholesale,,1747.41,36508.20,Lakeview Bistros,INV-1159,Paid,15/08/2026,Operating
+19/08/2026,Card settlement - cafe,Sales - Cafe,,567.57,37075.77,,,,,Operating
+20/08/2026,Card settlement - cafe,Sales - Cafe,,645.19,37720.96,,,,,Operating
+20/08/2026,Cafe supplies,Supplies,92.53,,37628.43,,,,,Operating
+20/08/2026,Meta Ads,Marketing,1269.18,,36359.25,Meta,,,,Operating
+21/08/2026,Card settlement - cafe,Sales - Cafe,,630.44,36989.69,,,,,Operating
+21/08/2026,Dairy Fresh Co,COGS - Dairy,578.83,,36410.86,,,,,Operating
+21/08/2026,Payment received INV-1109,Sales - Wholesale,,1952.73,38363.59,Maple Street Grocers,INV-1109,Paid,17/08/2026,Operating
+22/08/2026,Card settlement - cafe,Sales - Cafe,,827.58,39191.17,,,,,Operating
+22/08/2026,Payment received INV-1134,Sales - Wholesale,,1229.76,40420.93,Northgate Offices,INV-1134,Paid,16/08/2026,Operating
+23/08/2026,Card settlement - cafe,Sales - Cafe,,805.08,41226.01,,,,,Operating
+24/08/2026,Card settlement - cafe,Sales - Cafe,,478.25,41704.26,,,,,Operating
+24/08/2026,Online store payout,Sales - Online,,2477.19,44181.45,,,,,Operating
+25/08/2026,Card settlement - cafe,Sales - Cafe,,571.15,44752.60,,,,,Operating
+25/08/2026,Invoice INV-1083,Sales - Wholesale,,4159.86,,Brightside Hotels,INV-1083,Overdue,24/09/2026,Operating
+26/08/2026,Card settlement - cafe,Sales - Cafe,,610.23,45362.83,,,,,Operating
+26/08/2026,Payment received INV-1076,Sales - Wholesale,,4203.96,49566.79,Brightside Hotels,INV-1076,Paid,01/08/2026,Operating
+26/08/2026,Payment sent OD-1187,COGS - Green coffee,15779.87,,33786.92,Origin Direct Imports,OD-1187,Paid,23/08/2026,Operating
+27/08/2026,Card settlement - cafe,Sales - Cafe,,640.80,34427.72,,,,,Operating
+28/08/2026,Card settlement - cafe,Sales - Cafe,,594.76,35022.48,,,,,Operating
+28/08/2026,Dairy Fresh Co,COGS - Dairy,474.83,,34547.65,,,,,Operating
+28/08/2026,Cafe supplies,Supplies,113.98,,34433.67,,,,,Operating
+29/08/2026,Card settlement - cafe,Sales - Cafe,,768.43,35202.10,,,,,Operating
+29/08/2026,Cafe supplies,Supplies,90.18,,35111.92,,,,,Operating
+30/08/2026,Card settlement - cafe,Sales - Cafe,,827.28,35939.20,,,,,Operating
+31/08/2026,Card settlement - cafe,Sales - Cafe,,488.67,36427.87,,,,,Operating
+31/08/2026,Online store payout,Sales - Online,,2081.16,38509.03,,,,,Operating
+31/08/2026,Payroll run,Payroll,11750.00,,26759.03,Payroll,,,,Operating
+01/09/2026,Card settlement - cafe,Sales - Cafe,,576.82,27335.85,,,,,Operating
+01/09/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,22535.85,Harbor Property Group,,,,Operating
+02/09/2026,Card settlement - cafe,Sales - Cafe,,489.62,23025.47,,,,,Operating
+03/09/2026,Card settlement - cafe,Sales - Cafe,,529.04,23554.51,,,,,Operating
+03/09/2026,Shopify subscription,Software,79.00,,23475.51,Shopify,,,,Operating
+04/09/2026,Card settlement - cafe,Sales - Cafe,,559.45,24034.96,,,,,Operating
+04/09/2026,Dairy Fresh Co,COGS - Dairy,581.84,,23453.12,,,,,Operating
+04/09/2026,Cafe supplies,Supplies,57.87,,23395.25,,,,,Operating
+04/09/2026,Square subscription,Software,89.00,,23306.25,Square,,,,Operating
+04/09/2026,Invoice INV-1084,Sales - Wholesale,,4234.70,,Brightside Hotels,INV-1084,Overdue,04/10/2026,Operating
+05/09/2026,Card settlement - cafe,Sales - Cafe,,793.88,24100.13,,,,,Operating
+05/09/2026,Loan repayment - term loan,Loan repayment,2150.00,,21950.13,First Coastal Bank,,,,Operating
+05/09/2026,Payment received INV-1077,Sales - Wholesale,,4368.50,26318.63,Brightside Hotels,INV-1077,Paid,10/08/2026,Operating
+06/09/2026,Card settlement - cafe,Sales - Cafe,,723.22,27041.85,,,,,Operating
+06/09/2026,Xero subscription,Software,42.00,,26999.85,Xero,,,,Operating
+06/09/2026,Payment received INV-1110,Sales - Wholesale,,1865.55,28865.40,Maple Street Grocers,INV-1110,Paid,02/09/2026,Operating
+07/09/2026,Card settlement - cafe,Sales - Cafe,,610.72,29476.12,,,,,Operating
+07/09/2026,Online store payout,Sales - Online,,2573.70,32049.82,,,,,Operating
+07/09/2026,Cafe supplies,Supplies,61.88,,31987.94,,,,,Operating
+07/09/2026,Payment received INV-1160,Sales - Wholesale,,1771.49,33759.43,Lakeview Bistros,INV-1160,Paid,03/09/2026,Operating
+08/09/2026,Card settlement - cafe,Sales - Cafe,,516.87,34276.30,,,,,Operating
+08/09/2026,Utility bill,Utilities,669.39,,33606.91,City Utilities,,,,Operating
+08/09/2026,Payment received INV-1135,Sales - Wholesale,,1127.18,34734.09,Northgate Offices,INV-1135,Paid,02/09/2026,Operating
+08/09/2026,Bill OD-1189,COGS - Green coffee,15416.62,,,Origin Direct Imports,OD-1189,Unpaid,23/10/2026,Operating
+09/09/2026,Card settlement - cafe,Sales - Cafe,,551.22,35285.31,,,,,Operating
+09/09/2026,Payment received INV-1175,Sales - Wholesale,,1103.85,36389.16,Corner Co-op,INV-1175,Paid,01/09/2026,Operating
+09/09/2026,Payment sent PR-1201,COGS - Packaging,2140.00,,34249.16,PackRight Supplies,PR-1201,Paid,09/09/2026,Operating
+10/09/2026,Card settlement - cafe,Sales - Cafe,,594.27,34843.43,,,,,Operating
+11/09/2026,Card settlement - cafe,Sales - Cafe,,675.89,35519.32,,,,,Operating
+11/09/2026,Dairy Fresh Co,COGS - Dairy,577.08,,34942.24,,,,,Operating
+11/09/2026,Invoice INV-1085,Sales - Wholesale,,4151.08,,Brightside Hotels,INV-1085,Overdue,11/10/2026,Operating
+11/09/2026,Payment sent PR-1201,COGS - Packaging,2140.00,,32802.24,PackRight Supplies,PR-1201,Paid,09/09/2026,Operating
+12/09/2026,Card settlement - cafe,Sales - Cafe,,770.09,33572.33,,,,,Operating
+12/09/2026,Business insurance premium,Insurance,410.00,,33162.33,SafeHarbor Insurance,,,,Operating
+12/09/2026,Brand campaign - Summer Roast launch,Marketing,6400.00,,26762.33,Meta,,,,Operating
+13/09/2026,Card settlement - cafe,Sales - Cafe,,631.30,27393.63,,,,,Operating
+13/09/2026,Payment received INV-1078,Sales - Wholesale,,3712.73,31106.36,Brightside Hotels,INV-1078,Paid,17/08/2026,Operating
+14/09/2026,Card settlement - cafe,Sales - Cafe,,485.68,31592.04,,,,,Operating
+14/09/2026,Online store payout,Sales - Online,,2425.40,34017.44,,,,,Operating
+15/09/2026,Card settlement - cafe,Sales - Cafe,,451.67,34469.11,,,,,Operating
+15/09/2026,Cafe supplies,Supplies,79.98,,34389.13,,,,,Operating
+15/09/2026,Payroll run,Payroll,11750.00,,22639.13,Payroll,,,,Operating
+16/09/2026,Card settlement - cafe,Sales - Cafe,,626.57,23265.70,,,,,Operating
+16/09/2026,Invoice INV-1086,Sales - Wholesale,,3787.87,,Brightside Hotels,INV-1086,Unpaid,16/10/2026,Operating
+16/09/2026,Invoice INV-1113,Sales - Wholesale,,1757.56,,Maple Street Grocers,INV-1113,Unpaid,16/10/2026,Operating
+17/09/2026,Card settlement - cafe,Sales - Cafe,,615.86,23881.56,,,,,Operating
+17/09/2026,Payment received INV-1111,Sales - Wholesale,,1726.67,25608.23,Maple Street Grocers,INV-1111,Paid,15/09/2026,Operating
+17/09/2026,Invoice INV-1138,Sales - Wholesale,,1211.53,,Northgate Offices,INV-1138,Unpaid,17/10/2026,Operating
+17/09/2026,Invoice INV-1163,Sales - Wholesale,,1519.45,,Lakeview Bistros,INV-1163,Unpaid,17/10/2026,Operating
+18/09/2026,Card settlement - cafe,Sales - Cafe,,668.53,26276.76,,,,,Operating
+18/09/2026,Dairy Fresh Co,COGS - Dairy,474.21,,25802.55,,,,,Operating
+18/09/2026,Payment received INV-1079,Sales - Wholesale,,4137.04,29939.59,Brightside Hotels,INV-1079,Paid,24/08/2026,Operating
+18/09/2026,Payment received INV-1161,Sales - Wholesale,,1535.06,31474.65,Lakeview Bistros,INV-1161,Paid,15/09/2026,Operating
+19/09/2026,Card settlement - cafe,Sales - Cafe,,857.46,32332.11,,,,,Operating
+20/09/2026,Card settlement - cafe,Sales - Cafe,,702.51,33034.62,,,,,Operating
+20/09/2026,Meta Ads,Marketing,1052.80,,31981.82,Meta,,,,Operating
+21/09/2026,Card settlement - cafe,Sales - Cafe,,513.12,32494.94,,,,,Operating
+21/09/2026,Online store payout,Sales - Online,,2040.86,34535.80,,,,,Operating
+22/09/2026,Card settlement - cafe,Sales - Cafe,,469.27,35005.07,,,,,Operating
+22/09/2026,Espresso machine repair,Equipment,3950.00,,31055.07,BrewTech Service,,,,Operating
+23/09/2026,Card settlement - cafe,Sales - Cafe,,609.13,31664.20,,,,,Operating
+23/09/2026,Payment received INV-1136,Sales - Wholesale,,1305.76,32969.96,Northgate Offices,INV-1136,Paid,16/09/2026,Operating
+24/09/2026,Card settlement - cafe,Sales - Cafe,,630.65,33600.61,,,,,Operating
+24/09/2026,Payment sent OD-1188,COGS - Green coffee,15632.81,,17967.80,Origin Direct Imports,OD-1188,Paid,21/09/2026,Operating
+25/09/2026,Card settlement - cafe,Sales - Cafe,,648.87,18616.67,,,,,Operating
+25/09/2026,Dairy Fresh Co,COGS - Dairy,563.63,,18053.04,,,,,Operating
+25/09/2026,Cafe supplies,Supplies,82.86,,17970.18,,,,,Operating
+25/09/2026,Invoice INV-1087,Sales - Wholesale,,4140.19,,Brightside Hotels,INV-1087,Unpaid,25/10/2026,Operating
+26/09/2026,Card settlement - cafe,Sales - Cafe,,777.40,18747.58,,,,,Operating
+26/09/2026,Cafe supplies,Supplies,139.47,,18608.11,,,,,Operating
+27/09/2026,Card settlement - cafe,Sales - Cafe,,639.13,19247.24,,,,,Operating
+28/09/2026,Card settlement - cafe,Sales - Cafe,,515.17,19762.41,,,,,Operating
+28/09/2026,Online store payout,Sales - Online,,2438.27,22200.68,,,,,Operating
+29/09/2026,Card settlement - cafe,Sales - Cafe,,459.03,22659.71,,,,,Operating
+29/09/2026,Cafe supplies,Supplies,58.69,,22601.02,,,,,Operating
+30/09/2026,Card settlement - cafe,Sales - Cafe,,618.77,23219.79,,,,,Operating
+30/09/2026,Cafe supplies,Supplies,104.83,,23114.96,,,,,Operating
+30/09/2026,Payroll run,Payroll,11750.00,,11364.96,Payroll,,,,Operating
+01/10/2026,Card settlement - cafe,Sales - Cafe,,592.70,11957.66,,,,,Operating
+01/10/2026,Rent - Unit 4 Harbor St,Rent,4800.00,,7157.66,Harbor Property Group,,,,Operating
+02/10/2026,Card settlement - cafe,Sales - Cafe,,731.49,7889.15,,,,,Operating
+02/10/2026,Dairy Fresh Co,COGS - Dairy,466.01,,7423.14,,,,,Operating
+02/10/2026,Cafe supplies,Supplies,125.69,,7297.45,,,,,Operating
+02/10/2026,Invoice INV-1114,Sales - Wholesale,,2008.82,,Maple Street Grocers,INV-1114,Unpaid,01/11/2026,Operating
+02/10/2026,Invoice INV-1139,Sales - Wholesale,,1191.38,,Northgate Offices,INV-1139,Unpaid,01/11/2026,Operating
+03/10/2026,Card settlement - cafe,Sales - Cafe,,824.83,8122.28,,,,,Operating
+03/10/2026,Shopify subscription,Software,79.00,,8043.28,Shopify,,,,Operating
+03/10/2026,Invoice INV-1088,Sales - Wholesale,,4069.06,,Brightside Hotels,INV-1088,Unpaid,02/11/2026,Operating
+03/10/2026,Invoice INV-1164,Sales - Wholesale,,1811.39,,Lakeview Bistros,INV-1164,Unpaid,02/11/2026,Operating
+03/10/2026,Invoice INV-1177,Sales - Wholesale,,1013.23,,Corner Co-op,INV-1177,Unpaid,02/11/2026,Operating
+04/10/2026,Card settlement - cafe,Sales - Cafe,,704.07,8747.35,,,,,Operating
+04/10/2026,Square subscription,Software,89.00,,8658.35,Square,,,,Operating
+04/10/2026,Payment received INV-1080,Sales - Wholesale,,3826.57,12484.92,Brightside Hotels,INV-1080,Paid,03/09/2026,Operating
+05/10/2026,Card settlement - cafe,Sales - Cafe,,606.78,13091.70,,,,,Operating
+05/10/2026,Online store payout,Sales - Online,,2376.08,15467.78,,,,,Operating
+05/10/2026,Loan repayment - term loan,Loan repayment,2150.00,,13317.78,First Coastal Bank,,,,Operating
+06/10/2026,Card settlement - cafe,Sales - Cafe,,500.45,13818.23,,,,,Operating
+06/10/2026,Xero subscription,Software,42.00,,13776.23,Xero,,,,Operating
+07/10/2026,Card settlement - cafe,Sales - Cafe,,475.02,14251.25,,,,,Operating
+07/10/2026,Payment received INV-1112,Sales - Wholesale,,1936.29,16187.54,Maple Street Grocers,INV-1112,Paid,03/10/2026,Operating
+08/10/2026,Card settlement - cafe,Sales - Cafe,,568.97,16756.51,,,,,Operating
+08/10/2026,Utility bill,Utilities,686.72,,16069.79,City Utilities,,,,Operating
+08/10/2026,Payment received INV-1137,Sales - Wholesale,,1282.58,17352.37,Northgate Offices,INV-1137,Paid,03/10/2026,Operating
+09/10/2026,Card settlement - cafe,Sales - Cafe,,709.43,18061.80,,,,,Operating
+09/10/2026,Dairy Fresh Co,COGS - Dairy,531.44,,17530.36,,,,,Operating
+09/10/2026,Cafe supplies,Supplies,125.62,,17404.74,,,,,Operating
+09/10/2026,Payment received INV-1162,Sales - Wholesale,,1726.27,19131.01,Lakeview Bistros,INV-1162,Paid,04/10/2026,Operating
+09/10/2026,Payment received INV-1176,Sales - Wholesale,,1062.28,20193.29,Corner Co-op,INV-1176,Paid,02/10/2026,Operating
+10/10/2026,Card settlement - cafe,Sales - Cafe,,863.30,21056.59,,,,,Operating
+10/10/2026,Payment sent PR-1202,COGS - Packaging,2183.08,,18873.51,PackRight Supplies,PR-1202,Paid,10/10/2026,Operating
+10/10/2026,Bill PR-1203,COGS - Packaging,2174.39,,,PackRight Supplies,PR-1203,Unpaid,09/11/2026,Operating
+11/10/2026,Card settlement - cafe,Sales - Cafe,,734.94,19608.45,,,,,Operating
+11/10/2026,Payment received INV-1081,Sales - Wholesale,,4320.01,23928.46,Brightside Hotels,INV-1081,Paid,08/09/2026,Operating
+11/10/2026,Invoice INV-1089,Sales - Wholesale,,4359.49,,Brightside Hotels,INV-1089,Unpaid,10/11/2026,Operating
+12/10/2026,Card settlement - cafe,Sales - Cafe,,582.51,24510.97,,,,,Operating
+12/10/2026,Online store payout,Sales - Online,,2351.60,26862.57,,,,,Operating
+12/10/2026,Cafe supplies,Supplies,95.89,,26766.68,,,,,Operating
+12/10/2026,Business insurance premium,Insurance,410.00,,26356.68,SafeHarbor Insurance,,,,Operating
+12/10/2026,Bill OD-1190,COGS - Green coffee,24500.00,,,Origin Direct Imports,OD-1190,Unpaid,26/11/2026,Operating
+13/10/2026,Card settlement - cafe,Sales - Cafe,,492.53,26849.21,,,,,Operating
+14/10/2026,Card settlement - cafe,Sales - Cafe,,631.00,27480.21,,,,,Operating
+14/10/2026,Cafe supplies,Supplies,141.61,,27338.60,,,,,Operating

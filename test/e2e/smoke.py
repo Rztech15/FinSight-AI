@@ -1,0 +1,121 @@
+"""Browser smoke test. Starts the dev server, drives the real UI with Chromium, fails on any console error.
+Run: npm run test:e2e   (needs: pip install playwright && a Chromium build)"""
+import os, subprocess, sys, time, urllib.request, tempfile, json
+from playwright.sync_api import sync_playwright
+
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+PORT = os.environ.get("PORT", "3107")
+BASE = f"http://localhost:{PORT}"
+SHOTS = os.path.join(ROOT, "docs", "screenshots")
+os.makedirs(SHOTS, exist_ok=True)
+results = []
+
+def check(name, cond, detail=""):
+    results.append((name, bool(cond)))
+    print(("PASS " if cond else "FAIL ") + name + (f" — {detail}" if detail and not cond else ""))
+
+server = subprocess.Popen(["node", "server/dev.mjs"], cwd=ROOT, env={**os.environ, "PORT": PORT, "AI_API_KEY": ""}, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+try:
+    for _ in range(40):
+        try: urllib.request.urlopen(BASE, timeout=1); break
+        except Exception: time.sleep(0.25)
+    with sync_playwright() as p:
+        exe = os.environ.get("CHROMIUM_PATH")
+        b = p.chromium.launch(**({"executable_path": exe} if exe else {}))
+        pg = b.new_page(viewport={"width": 1366, "height": 900}, color_scheme="dark")
+        errors = []
+        pg.on("console", lambda m: errors.append(m.text) if m.type == "error" else None)
+        pg.on("pageerror", lambda e: errors.append(str(e)))
+        pg.goto(BASE)
+        pg.wait_for_selector("text=Welcome back")
+        check("login page is the entry point", pg.locator("form[data-form=login-signin]").count() == 1)
+        check("form disabled when accounts not configured", pg.locator("form[data-form=login-signin] input[name=email]").is_disabled())
+        pg.screenshot(path=f"{SHOTS}/login.png")
+        pg.click("[data-action=auth-mode][data-mode=signup]"); pg.wait_for_selector("text=Create your account"); pg.screenshot(path=f"{SHOTS}/signup.png")
+        pg.click("[data-action=auth-mode][data-mode=signin]"); pg.wait_for_selector("text=Welcome back")
+        pg.click("[data-action=auth-mode][data-mode=reset]"); pg.wait_for_selector("text=Reset your password"); pg.screenshot(path=f"{SHOTS}/reset-password.png")
+        pg.click("text=Continue as guest"); pg.wait_for_selector("text=Upload data")
+        check("guest reaches empty dashboard", pg.locator(".empty").count() == 1)
+        pg.goto(f"{BASE}/#/upload"); pg.wait_for_selector("[data-dropzone]"); pg.screenshot(path=f"{SHOTS}/upload-empty.png", full_page=True)
+        pg.goto(f"{BASE}/#/dashboard")
+        pg.click("text=Explore demo data")
+        pg.wait_for_selector(".kpi")
+        check("demo loads dashboard with 6 KPIs", pg.locator(".kpi").count() == 6)
+        check("cash on hand is real number", "27,339" in pg.locator(".kpi").first.inner_text())
+        check("shortfall badge shown", pg.locator("text=Shortfall in week").count() >= 1)
+        pg.screenshot(path=f"{SHOTS}/dashboard-dark.png", full_page=True)
+        for route, marker in [("forecast", "Scenario simulator"), ("risks", "Risk intelligence"), ("health", "Health score"), ("financing", "Estimated funding need"), ("actions", "Sandbox mode"), ("copilot", "AI copilot"), ("settings", "Forecast assumptions"), ("methodology", "Verified numbers first"), ("upload", "Check your columns")]:
+            pg.goto(f"{BASE}/#/{route}")
+            pg.wait_for_selector(f"text={marker}", timeout=5000)
+            check(f"route {route} renders", True)
+        pg.goto(f"{BASE}/#/forecast")
+        pg.check("[data-sc-toggle=late_customers]")
+        pg.wait_for_selector(".compare")
+        check("scenario comparison appears", pg.locator(".verdict").count() == 1)
+        pg.goto(f"{BASE}/#/actions")
+        n_before = pg.locator("article.action").count()
+        check("actions proposed", n_before >= 3, str(n_before))
+        pg.locator("button:has-text('Approve')").first.click()
+        pg.wait_for_selector("button:has-text('Run in sandbox')")
+        pg.locator("button:has-text('Run in sandbox')").first.click()
+        pg.wait_for_selector(".results")
+        check("measured results after sandbox run", pg.locator(".results").count() == 1)
+        check("audit log has 2 entries", pg.locator("#au-h").locator("xpath=ancestor::section//tbody/tr").count() == 2)
+        pg.click("text=Verify integrity")
+        pg.wait_for_selector("text=Hash chain verified")
+        check("audit chain verifies", True)
+        pg.goto(f"{BASE}/#/copilot")
+        pg.fill("#q", "How long will my cash last?")
+        pg.press("#q", "Enter")
+        pg.wait_for_selector(".msg.bot .cite")
+        check("copilot answers with citations", pg.locator(".msg.bot .cite").count() >= 1)
+        pg.goto(f"{BASE}/#/financing")
+        pg.locator("button:has-text('Preview effect on cash')").first.click()
+        pg.wait_for_selector(".preview-box")
+        check("financing preview renders", True)
+        # theme + mobile
+        pg.click("[data-action=theme-toggle]")
+        check("light theme applies", pg.evaluate("document.documentElement.dataset.theme") == "light")
+        pg.goto(f"{BASE}/#/dashboard"); pg.wait_for_selector(".kpi")
+        pg.screenshot(path=f"{SHOTS}/dashboard-light.png", full_page=True)
+        pg.set_viewport_size({"width": 390, "height": 800})
+        pg.reload(); pg.wait_for_selector("#view")
+        check("no horizontal scroll on mobile", pg.evaluate("document.documentElement.scrollWidth <= window.innerWidth + 1"))
+        # XSS-inert upload
+        pg.set_viewport_size({"width": 1366, "height": 900})
+        csv = "Date,Description,Amount,Balance\n2026-01-02,\"<img src=x onerror=window.__xss=1>Shop\",-10.00,990\n2026-01-03,Sale,500,1490\n2026-01-09,Sale,500,1990\n2026-01-20,\"<script>window.__xss=1</script>\",-20,1970\n"
+        f = tempfile.NamedTemporaryFile("w", suffix=".csv", delete=False); f.write(csv); f.close()
+        pg.goto(f"{BASE}/#/upload"); pg.wait_for_selector("[data-dropzone]")
+        pg.set_input_files("#file-input", f.name)
+        pg.wait_for_selector("text=Check your columns")
+        pg.click("text=Analyze this data")
+        pg.wait_for_selector("#view")
+        pg.goto(f"{BASE}/#/dashboard")
+        check("uploaded markup stays inert", pg.evaluate("window.__xss") is None and pg.locator("#view img[src='x']").count() == 0)
+        # mocked Supabase sign-in (no network): proves the client flow, not a live Supabase project
+        ctx = b.new_context(color_scheme="dark", viewport={"width": 1366, "height": 900}); pg2 = ctx.new_page()
+        pg2.route("**/api/config", lambda r: r.fulfill(json={"aiConfigured": False, "authRequired": False, "supabase": {"url": "https://test.supabase.co", "anonKey": "anon"}, "mode": "sandbox"}))
+        pg2.route("https://test.supabase.co/auth/v1/token*", lambda r: r.fulfill(json={"access_token": "t", "refresh_token": "r", "expires_in": 3600, "user": {"id": "u1", "email": "demo@example.com"}}))
+        pg2.goto(BASE); pg2.wait_for_selector("text=Welcome back")
+        check("form enabled when accounts configured", pg2.locator("form[data-form=login-signin] input[name=email]").is_enabled())
+        pg2.screenshot(path=f"{SHOTS}/login-accounts-enabled.png")
+        pg2.fill("input[name=email]", "demo@example.com"); pg2.fill("input[name=password]", "password123")
+        pg2.click("form[data-form=login-signin] button[type=submit]"); pg2.wait_for_selector("text=Upload data")
+        check("mocked sign-in reaches app and shows account", "demo@example.com" in pg2.locator("#acct-link").inner_text())
+        ctx3 = b.new_context(color_scheme="dark"); pg3 = ctx3.new_page()
+        pg3.route("**/api/config", lambda r: r.fulfill(json={"aiConfigured": False, "authRequired": False, "supabase": {"url": "https://test.supabase.co", "anonKey": "anon"}, "mode": "sandbox"}))
+        pg3.route("https://test.supabase.co/auth/v1/authorize*", lambda r: r.fulfill(status=200, content_type="text/html", body="<html>google</html>"))
+        pg3.route("https://test.supabase.co/auth/v1/user", lambda r: r.fulfill(json={"id": "g1", "email": "google.user@example.com"}))
+        pg3.goto(BASE); pg3.wait_for_selector("text=Welcome back")
+        with pg3.expect_request("https://test.supabase.co/auth/v1/authorize*") as req:
+            pg3.click("[data-action=google]")
+        check("Google button starts Supabase OAuth for provider=google", "provider=google" in req.value.url)
+        pg3.goto(f"{BASE}/#access_token=tok&refresh_token=r&expires_in=3600&token_type=bearer"); pg3.wait_for_selector("text=Upload data")
+        check("Google redirect completes sign-in", "google.user@example.com" in pg3.locator("#acct-link").inner_text())
+        check("no console errors", not errors, "; ".join(errors[:3]))
+        b.close()
+finally:
+    server.terminate()
+failed = [n for n, ok in results if not ok]
+print(f"\n{len(results) - len(failed)}/{len(results)} browser checks passed")
+sys.exit(1 if failed else 0)

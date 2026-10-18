@@ -1,0 +1,20 @@
+{
+  "name": "finsight-ai",
+  "version": "1.0.0",
+  "description": "FinSight AI - explainable financial decision engine for small businesses. Turn Financial Data into Better Decisions.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node server/dev.mjs",
+    "test": "node --test test/ingest.test.js test/engines.test.js test/product.test.js test/api.test.js test/client.test.js",
+    "sample": "node scripts/make-sample.mjs",
+    "test:e2e": "python3 test/e2e/smoke.py",
+    "start": "node server/dev.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
