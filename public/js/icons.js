@@ -26,6 +26,12 @@ const P = {
   file: '<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/>',
   down: '<path d="M12 4v12m0 0l-5-5m5 5l5-5M5 20h14"/>',
   user: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/>',
+  bars: '<path d="M5 20V11m7 9V4m7 16v-6"/>',
+  bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+  brain: '<path d="M9.5 4A3 3 0 0 0 6.5 7a3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 5 1.500V5.500A2 2 0 0 0 9.500 4z"/><path d="M14.500 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-5 1.500"/>',
+  home: '<path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/>',
+  cloud: '<path d="M7 18a4 4 0 0 1-.6-8A6 6 0 0 1 18 9a4.500 4.500 0 0 1 0 9z"/><path d="M12 16v-5m0 0l-2.500 2.500M12 11l2.500 2.500"/>',
+  arrow: '<path d="M5 12h14m-5-5l5 5-5 5"/>',
   chevron: '<path d="M9 6l6 6-6 6"/>',
 };
 

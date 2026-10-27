@@ -15,6 +15,7 @@ import { appendEntry, verifyChain, exportLog } from '../core/audit.js';
 import { requestSummary, requestAnswer } from './ai-client.js';
 import { createAuth } from './auth.js';
 import { pushAuditEntry } from './sync.js';
+import { saveData, loadData, clearData, saveHistory, listHistory, loadHistoryItem, deleteHistoryItem, clearHistory } from './persist.js';
 import { dashboardView } from './ui/dashboard.js';
 import { uploadView } from './ui/upload.js';
 import { forecastView } from './ui/forecast.js';
@@ -25,23 +26,40 @@ import { actionsView } from './ui/actions.js';
 import { copilotView } from './ui/copilot.js';
 import { settingsView } from './ui/settings.js';
 import { loginView } from './ui/login.js';
+import { historyView } from './ui/history.js';
+import { homeView } from './ui/home.js';
 import { methodologyView } from './ui/methodology.js';
 
 const MAX_FILE = MAX_XLSX_BYTES;
-const VIEWS = { dashboard: dashboardView, upload: uploadView, copilot: copilotView, forecast: forecastView, risks: risksView, health: healthView, financing: financingView, actions: actionsView, settings: settingsView, methodology: methodologyView, login: loginView };
+const VIEWS = { home: homeView, dashboard: dashboardView, upload: uploadView, copilot: copilotView, forecast: forecastView, risks: risksView, health: healthView, financing: financingView, actions: actionsView, history: historyView, settings: settingsView, methodology: methodologyView, login: loginView };
 const NAV = [
-  ['dashboard', 'Dashboard', 'grid'], ['upload', 'Data Upload', 'upload'], ['copilot', 'AI Copilot', 'bot'], ['forecast', 'Cash Flow Forecast', 'trend'],
-  ['risks', 'Risk Intelligence', 'shield'], ['health', 'Financial Health', 'heart'], ['financing', 'Financing Options', 'bank'], ['actions', 'Actions & Audit', 'check'],
+  ['home', 'Home', 'home'], ['dashboard', 'Dashboard', 'grid'], ['upload', 'Data Upload', 'upload'], ['copilot', 'AI Copilot', 'bot'], ['forecast', 'Cash Flow Forecast', 'trend'],
+  ['risks', 'Risk Intelligence', 'shield'], ['health', 'Financial Health', 'heart'], ['financing', 'Financing Options', 'bank'], ['actions', 'Actions & Audit', 'check'], ['history', 'History', 'clock'],
   ['settings', 'Settings', 'gear'], ['methodology', 'How it works', 'info'],
 ];
 let auth = createAuth(null);
+const SESSION_KEY = 'finsight.session.v1';
+/** Remember that this browser has used the app before, so the login page can say "Welcome back" only to returning visitors. */
+function markReturning() {
+  if (app.returning) return;
+  app.returning = true;
+  try { localStorage.setItem('finsight.returning.v1', 'true'); } catch { /* storage blocked */ }
+}
+function setSession(sess) {
+  app.session = sess;
+  if (sess) markReturning();
+  try { if (sess) sessionStorage.setItem(SESSION_KEY, JSON.stringify(sess)); else sessionStorage.removeItem(SESSION_KEY); } catch { /* storage blocked */ }
+}
+function restoreSession() {
+  try { const v = JSON.parse(sessionStorage.getItem(SESSION_KEY) || 'null'); if (v?.accessToken && v.expiresAt > Date.now()) app.session = v; } catch { /* ignore */ }
+}
 
 /* ---------- shell ---------- */
 function shell() {
   document.getElementById('app').innerHTML = html`
     <a class="skip" href="#view">Skip to content</a>
     <aside class="sidebar" id="sidebar" aria-label="Main navigation">
-      <a class="brand" href="#/dashboard"><img src="/assets/logo-full.png" alt="FinSight AI" width="170"></a>
+      <a class="brand" href="#/home"><img src="/assets/logo-full.png" alt="FinSight AI" width="170"></a>
       <nav><ul>${NAV.map(([r, label, ic]) => html`<li><a href="#/${r}" data-nav="${r}">${icon(ic, 18)}<span>${label}</span></a></li>`)}</ul></nav>
       <div class="side-foot"><a href="#/login" class="acct-link" id="acct-link"></a><span class="sandbox-chip">${icon('lock', 14)}Sandbox mode</span><span class="muted small">No real money moves.</span></div>
     </aside>
@@ -75,6 +93,7 @@ function render({ top = false } = {}) {
   chip.textContent = app.analysis && !app.analysis.empty ? (app.isDemo ? 'Demo data' : app.fileName || 'Data loaded') : 'No data loaded';
   document.documentElement.dataset.theme = app.theme;
   document.body.classList.toggle('auth-page', app.route === 'login');
+  document.body.classList.toggle('home-page', app.route === 'home');
   const al = document.getElementById('acct-link');
   if (al) al.textContent = app.session ? `Signed in: ${app.session.user.email}` : 'Sign in / Sign up';
   if (top) { window.scrollTo(0, 0); view.focus({ preventScroll: true }); } else window.scrollTo(0, y);
@@ -134,6 +153,7 @@ function runAnalysis({ fetchAi = true } = {}) {
   if (!app.importResult) return;
   app.analysis = analyze(app.importResult.transactions, effectiveSettings(), app.importResult.stats);
   app.scenarioResult = null; app.financingSim = null;
+  persistLoaded();
   if (app.analysis.empty) { app.evidence = []; app.actions = []; return; }
   mergeActions();
   app.evidence = buildEvidence({ metrics: app.analysis.metrics, forecast: app.analysis.forecast, health: app.analysis.health, risks: app.analysis.risks, actions: app.actions, financing: app.analysis.financing }, { withholdNames: app.privacy.withholdNames });
@@ -141,6 +161,51 @@ function runAnalysis({ fetchAi = true } = {}) {
   const local = deterministicNarrative(app.evidence);
   app.ai = { status: 'idle', narrative: local, source: 'deterministic', reason: app.config.aiConfigured ? null : 'ai_not_configured' };
   if (fetchAi && app.config.aiConfigured) fetchSummary();
+}
+
+/** Remember the loaded file on this device (IndexedDB) and add it to History. Demo data is just a flag. */
+let saveTimer = null;
+const cancelSave = () => clearTimeout(saveTimer);
+function persistLoaded() {
+  if (!app.privacy.rememberData) return;
+  cancelSave();
+  if (app.isDemo) { saveData({ demo: true }); return; }
+  const a = app.analysis;
+  if (!app.table || !a || a.empty) return;
+  const payload = { demo: false, fileName: app.fileName, table: app.table, mapping: app.mapping, mapOptions: app.mapOptions };
+  saveData(payload); // current file: saved at once so a reload right after loading keeps it
+  saveTimer = setTimeout(async () => { // history entry: debounced, it is rewritten on every settings change
+    const m = a.metrics;
+    await saveHistory({
+      fp: `${app.fileName}|${app.table.rows.length}|${m.period.first}|${m.period.last}`, name: app.fileName, rows: app.table.rows.length,
+      first: m.period.first, last: m.period.last, cash: m.cash.available ? m.cash.value : null, currency: a.settings.currency,
+      health: a.health.available ? a.health.score : null, shortfallWeek: a.forecast.available ? (a.forecast.firstShortfall?.week ?? null) : null,
+    }, payload);
+    if (app.route === 'history') refreshHistory();
+  }, 200);
+}
+
+async function refreshHistory() {
+  app.history = app.privacy.rememberData ? await listHistory() : [];
+  if (app.route === 'history') render();
+}
+
+function applyPayload(v) {
+  app.table = v.table; app.fileName = v.fileName; app.isDemo = false;
+  app.mapping = v.mapping; app.mapOptions = v.mapOptions || { dayFirst: 'auto', swapDebitCredit: false };
+  app.mapConfidence = null; app.mapNotes = []; app.chat = []; app.error = null;
+  runImport(); runAnalysis();
+}
+
+async function restoreLoaded() {
+  if (!app.privacy.rememberData) return false;
+  const v = await loadData();
+  if (!v) return false;
+  try {
+    if (v.demo) { await loadDemo({ navigate: false }); return !!app.analysis; }
+    applyPayload(v);
+    return !!app.analysis && !app.analysis.empty;
+  } catch { await clearData(); return false; }
 }
 
 async function fetchSummary() {
@@ -152,12 +217,14 @@ async function fetchSummary() {
 }
 const token = () => (app.session && app.session.expiresAt > Date.now() ? app.session.accessToken : null);
 
-async function loadDemo() {
+async function loadDemo({ navigate = true } = {}) {
+  markReturning();
   try {
     const res = await fetch('/samples/harbor-pine-roasters-demo.csv');
     if (!res.ok) throw new Error('Demo file not found.');
     setTable(parseCSV(await res.text()), 'harbor-pine-roasters-demo.csv', true);
-    runAnalysis(); go('dashboard'); render({ top: true });
+    runAnalysis();
+    if (navigate) { go('dashboard'); render({ top: true }); }
   } catch (e) { app.error = e.message; go('upload'); render(); }
 }
 
@@ -209,10 +276,25 @@ async function ask(q) {
 }
 
 /* ---------- events ---------- */
+function clearLoaded() {
+  cancelSave();
+  Object.assign(app, { table: null, importResult: null, mapping: null, analysis: null, actions: [], results: null, evidence: [], chat: [], isDemo: false, fileName: null, error: null });
+}
+
 const clickActions = {
+  'home-scroll': (el) => { document.getElementById('hm-nav')?.classList.remove('open'); document.getElementById(el.dataset.target)?.scrollIntoView({ behavior: 'smooth', block: 'start' }); },
+  'home-menu': (el) => { const o = document.getElementById('hm-nav').classList.toggle('open'); el.setAttribute('aria-expanded', String(o)); },
+  'hist-open': async (el) => {
+    const v = await loadHistoryItem(el.dataset.id);
+    if (!v) { toast('That entry is no longer available.'); await refreshHistory(); return; }
+    applyPayload(v); go('dashboard'); render({ top: true }); toast(`Opened ${v.fileName}.`);
+  },
+  'hist-delete': async (el) => { cancelSave(); await deleteHistoryItem(el.dataset.id); await refreshHistory(); toast('Removed from history.'); },
+  'hist-clear': async () => { if (!confirm('Delete all saved history from this device?')) return; cancelSave(); await clearHistory(); await refreshHistory(); toast('History deleted.'); },
+  'clear-data': async () => { await clearData(); clearLoaded(); go('dashboard'); render({ top: true }); toast('Loaded data cleared from this device.'); },
   goto: (el) => go(el.dataset.route),
   'load-demo': () => loadDemo(),
-  'reset-upload': () => { app.table = null; app.importResult = null; app.mapping = null; app.error = null; render(); },
+  'reset-upload': () => { clearData(); app.table = null; app.importResult = null; app.mapping = null; app.error = null; render(); },
   analyze: () => { runAnalysis(); go('dashboard'); render({ top: true }); },
   'regen-summary': () => fetchSummary(),
   'goto-action': (el) => { go('actions'); setTimeout(() => document.getElementById(`act-${el.dataset.id}`)?.scrollIntoView({ block: 'center' }), 30); },
@@ -234,19 +316,19 @@ const clickActions = {
   menu: () => document.body.classList.toggle('nav-open'),
   'theme-toggle': () => setTheme(app.theme === 'dark' ? 'light' : 'dark'),
   theme: (el) => setTheme(el.dataset.theme),
-  signout: async () => { await auth.signOut(app.session); app.session = null; go('login'); render(); },
+  signout: async () => { await auth.signOut(app.session); setSession(null); clearData(); clearHistory(); app.history = []; clearLoaded(); go('login'); render(); },
   google: () => { if (auth.enabled) location.assign(auth.googleUrl(`${location.origin}/`)); },
-  guest: () => { app.guest = true; app.authMsg = null; go('dashboard'); },
+  guest: () => { markReturning(); app.guest = true; app.authMsg = null; go('home'); },
   'auth-mode': (el) => { app.authMode = el.dataset.mode; app.authMsg = null; render(); },
   signup: async () => {
     const f = document.querySelector('[data-form="signin"]');
     if (!f.reportValidity()) return;
-    try { const r = await auth.signUp(f.email.value, f.password.value); if (r.pendingConfirmation) app.authMsg = { text: 'Account created. Check your email to confirm it, then sign in.' }; else { app.session = r; app.authMsg = null; } } catch (e) { app.authMsg = { error: true, text: e.message }; }
+    try { const r = await auth.signUp(f.email.value, f.password.value); if (r.pendingConfirmation) app.authMsg = { text: 'Account created. Check your email to confirm it, then sign in.' }; else { setSession(r); app.authMsg = null; } } catch (e) { app.authMsg = { error: true, text: e.message }; }
     render();
   },
   'reset-all': () => {
     if (!confirm('Clear settings, decisions, the audit log and the loaded file from this browser?')) return;
-    resetPersisted(); Object.assign(app, { settings: { ...DEFAULT_SETTINGS }, decisions: {}, audit: [], auditStatus: null, analysis: null, table: null, importResult: null, mapping: null, actions: [], results: null, evidence: [], chat: [], isDemo: false });
+    resetPersisted(); clearData(); clearHistory(); Object.assign(app, { history: [] }); Object.assign(app, { settings: { ...DEFAULT_SETTINGS }, decisions: {}, audit: [], auditStatus: null, analysis: null, table: null, importResult: null, mapping: null, actions: [], results: null, evidence: [], chat: [], isDemo: false });
     go('dashboard'); render({ top: true }); toast('Local data cleared.');
   },
 };
@@ -277,6 +359,7 @@ document.addEventListener('change', (e) => {
   const t = e.target;
   if (t.id === 'file-input') return handleFile(t.files[0]);
   if (t.dataset.setting) { applySetting(t.dataset.setting, t.value); return render(); }
+  if (t.dataset.privacy === 'rememberData') { app.privacy.rememberData = t.checked; persistPrivacy(); if (t.checked) persistLoaded(); else { cancelSave(); clearData(); clearHistory(); app.history = []; } return render(); }
   if (t.dataset.privacy) { app.privacy.withholdNames = t.checked; persistPrivacy(); if (app.analysis && !app.analysis.empty) runAnalysis({ fetchAi: false }); return render(); }
   if (t.dataset.map) { app.mapping = { ...app.mapping, [t.dataset.map]: t.value || null }; runImport(); return render(); }
   if (t.dataset.mapOption) {
@@ -304,17 +387,17 @@ document.addEventListener('submit', async (e) => {
     if (!f.reportValidity()) return;
     try {
       if (mode === 'signup' && f.password.value !== f.confirm.value) throw new Error('Passwords do not match.');
-      if (mode === 'signin') { app.session = await auth.signIn(f.email.value, f.password.value); app.authMsg = null; go('dashboard'); toast('Signed in.'); }
+      if (mode === 'signin') { const was = app.returning; setSession(await auth.signIn(f.email.value, f.password.value)); app.authMsg = null; go('home'); toast(was ? 'Welcome back!' : 'Signed in.'); }
       else if (mode === 'signup') {
         const r = await auth.signUp(f.email.value, f.password.value);
         if (r.pendingConfirmation) app.authMsg = { text: 'Account created. Check your email to confirm it, then sign in.' };
-        else { app.session = r; app.authMsg = null; go('dashboard'); }
+        else { setSession(r); app.authMsg = null; go('home'); toast('Account created. Welcome to FinSight AI!'); }
       } else { await auth.recover(f.email.value); app.authMsg = { text: 'If that email has an account, a reset link is on its way.' }; }
     } catch (err) { app.authMsg = { error: true, text: err.message }; }
     render(); return;
   }
   if (f.dataset.form === 'signin') {
-    try { app.session = await auth.signIn(f.email.value, f.password.value); app.authMsg = null; toast('Signed in.'); } catch (err) { app.authMsg = { error: true, text: err.message }; }
+    try { setSession(await auth.signIn(f.email.value, f.password.value)); app.authMsg = null; toast('Signed in.'); } catch (err) { app.authMsg = { error: true, text: err.message }; }
     render();
   }
 });
@@ -342,22 +425,27 @@ document.addEventListener('focusout', hideTip);
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { hideTip(); document.body.classList.remove('nav-open'); } });
 window.addEventListener('scroll', hideTip, { passive: true });
 
-window.addEventListener('hashchange', () => { app.route = routeOf(); render({ top: true }); });
+window.addEventListener('hashchange', () => { app.route = routeOf(); render({ top: true }); if (app.route === 'history') refreshHistory(); });
 
 /* ---------- boot ---------- */
 async function boot() {
   document.documentElement.dataset.theme = app.theme;
   shell();
+  restoreSession();
   const oauthHash = /^#(access_token|error)=/.test(location.hash) ? location.hash : null;
   app.route = location.hash && !oauthHash ? routeOf() : 'login';
   if (!location.hash || oauthHash) history.replaceState(null, '', '#/login');
+  render();
+  const restored = oauthHash ? false : await restoreLoaded();
+  await refreshHistory();
+  if (restored && (!location.hash || location.hash === '#/login')) { history.replaceState(null, '', '#/dashboard'); app.route = 'dashboard'; }
   render();
   try {
     const r = await fetch('/api/config');
     if (r.ok) { app.config = await r.json(); auth = createAuth(app.config.supabase); }
   } catch { /* static hosting without API: rules-based mode */ }
   if (oauthHash) {
-    try { const sess = await auth.fromRedirect(oauthHash); if (sess) { app.session = sess; go('dashboard'); toast('Signed in with Google.'); } }
+    try { const sess = await auth.fromRedirect(oauthHash); if (sess) { setSession(sess); go('home'); toast('Signed in with Google.'); } }
     catch (e) { app.authMsg = { error: true, text: e.message }; }
   }
   render();

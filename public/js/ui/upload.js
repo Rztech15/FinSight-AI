@@ -20,7 +20,7 @@ function dropzone() {
   <div class="grid-3 tips">
     <section class="card"><h3>What works</h3><ul class="plain"><li>Bank exports, accounting ledgers, POS or invoice lists</li><li>One signed Amount column, or separate Debit / Credit columns</li><li>Optional: running balance, category, customer/supplier, invoice number, due date, payment status</li></ul></section>
     <section class="card"><h3>Open invoices</h3><p class="muted">Rows whose status is unpaid, open, pending or overdue are treated as receivables (positive) or payables (negative), not as cash — they feed the forecast on their due dates.</p></section>
-    <section class="card"><h3>${icon('lock', 16)} Privacy</h3><p class="muted">Files are read in your browser and held in memory only. The AI assistant receives a short list of aggregated, verified figures — never your transactions.</p></section>
+    <section class="card"><h3>${icon('lock', 16)} Privacy</h3><p class="muted">Files are read in your browser and are never uploaded. A copy is kept on this device for 24 hours so a reload doesn't lose it (you can turn this off in Settings). The AI assistant receives a short list of aggregated, verified figures — never your transactions.</p></section>
   </div>`;
 }
 

@@ -55,9 +55,41 @@ function arApCard(m, $) {
 }
 const shiftDays = (iso, n) => new Date(Date.UTC(+iso.slice(0, 4), +iso.slice(5, 7) - 1, +iso.slice(8, 10) + n)).toISOString().slice(0, 10);
 
+const STEPS = [
+  ['upload', '1', 'Upload', 'Drop in a bank export, ledger or invoice list (CSV or Excel). Columns are mapped for you.'],
+  ['shield', '2', 'Review', 'See verified cash, a 13-week forecast, risk alerts and a health score. Every number is calculated, not guessed.'],
+  ['check', '3', 'Decide', 'Compare what-ifs, match financing, and approve recommended actions. Nothing real happens: sandbox only.'],
+];
+const TILES = [
+  ['trend', 'Cash flow forecast', 'Weekly projection with a confidence range and scenario simulator.', 'forecast'],
+  ['shield', 'Risk intelligence', 'Early warnings, each with the evidence behind it.', 'risks'],
+  ['heart', 'Financial health', 'A transparent 0–100 score with every component shown.', 'health'],
+  ['bank', 'Financing options', 'Estimate your funding need and compare product types.', 'financing'],
+  ['bot', 'AI copilot', 'Ask questions; answers cite your verified numbers.', 'copilot'],
+  ['check', 'Actions & audit', 'Human-approved actions with a tamper-evident log.', 'actions'],
+];
+
+function welcomeView() {
+  return html`<section class="welcome">
+    <div class="welcome-hero card">
+      <img src="/assets/logo-mark.png" alt="" width="64" height="74">
+      <h1>Know your cash. See trouble coming. Decide with confidence.</h1>
+      <p class="lede muted">FinSight AI turns your financial data into verified forecasts, risk alerts and clear next steps for your small business.</p>
+      <div class="row center"><button class="btn primary big" data-action="goto" data-route="upload">${icon('upload', 18)}Upload your data</button>
+        <button class="btn big" data-action="load-demo">${icon('spark', 18)}Try the demo business</button></div>
+      <p class="fineprint">Takes about two minutes. Your transactions are analysed in your browser and never uploaded.</p>
+    </div>
+    <h2 class="section-h">How it works</h2>
+    <div class="steps">${STEPS.map(([ic, n, t, d]) => html`<article class="card step"><span class="step-n">${n}</span><h3>${icon(ic, 18)}${t}</h3><p class="muted">${d}</p></article>`)}</div>
+    <h2 class="section-h">What you'll get</h2>
+    <div class="tiles">${TILES.map(([ic, t, d, r]) => html`<button class="card tile" data-action="goto" data-route="${r}"><span class="tile-ic">${icon(ic, 20)}</span><b>${t}</b><span class="muted small">${d}</span></button>`)}</div>
+    <div class="trust card"><span>${icon('lock', 16)}Your data stays in your browser</span><span>${icon('shield', 16)}AI explains verified numbers and never invents them</span><span>${icon('check', 16)}Sandbox only: no real money moves</span></div>
+  </section>`;
+}
+
 export function dashboardView() {
   const a = app.analysis;
-  if (!a || a.empty) return needData('See your cash position and risks in minutes');
+  if (!a || a.empty) return welcomeView();
   const { metrics: m, forecast: f, health, risks } = a;
   const $ = (v) => money(v, cur());
   const lastNet = m.lastMonth ? `Last full month (${m.lastMonth.key}): ${signedMoney(m.lastMonth.net, cur())}` : '';

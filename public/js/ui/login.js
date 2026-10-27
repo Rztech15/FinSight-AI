@@ -2,11 +2,11 @@ import { html } from '../dom.js';
 import { icon } from '../icons.js';
 import { app } from '../state.js';
 
-const COPY = {
-  signin: { title: 'Welcome back', sub: 'Sign in to your FinSight AI account.' },
-  signup: { title: 'Create your account', sub: 'Join FinSight AI and start making smarter financial decisions.' },
+const copy = (mode) => ({
+  signin: app.returning ? { title: 'Welcome back', sub: 'Sign in to your FinSight AI account.' } : { title: 'Sign in', sub: 'Sign in to your existing FinSight AI account.' },
+  signup: { title: 'Welcome to FinSight AI', sub: 'Create your free account, or continue as a guest, to start making smarter financial decisions.' },
   reset: { title: 'Reset your password', sub: 'Enter your email and we will send you a link to reset your password.' },
-};
+})[mode];
 
 function fields(mode, off) {
   const d = off ? 'disabled' : '';
@@ -18,8 +18,8 @@ function fields(mode, off) {
 }
 
 export function loginView() {
-  const mode = app.authMode || 'signin';
-  const c = COPY[mode];
+  const mode = app.authMode || (app.returning ? 'signin' : 'signup');
+  const c = copy(mode);
   const off = !app.config.supabase;
   const btn = { signin: 'Sign in', signup: 'Create account', reset: 'Send reset link' }[mode];
   return html`<div class="auth-wrap">
@@ -50,6 +50,6 @@ export function loginView() {
       <p class="auth-switch muted small">${mode === 'signin' ? html`Don't have an account? <button class="link" data-action="auth-mode" data-mode="signup">Sign up</button>`
     : mode === 'signup' ? html`Already have an account? <button class="link" data-action="auth-mode" data-mode="signin">Sign in</button>`
       : html`<button class="link" data-action="auth-mode" data-mode="signin">← Back to sign in</button>`}</p>
-      <p class="fineprint">${icon('lock', 12)} Your transactions are analysed in your browser and are never uploaded or stored.</p>
+      <p class="fineprint">${icon('lock', 12)} Your transactions are analysed in your browser and are never uploaded.</p>
     </section></div>`;
 }

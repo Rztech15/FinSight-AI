@@ -13,7 +13,7 @@ Scope: FinSight AI MVP (sandbox). Written from the code; items marked **tested**
 | — | Real payments, emails, lender submissions | **not implemented** |
 
 ## Controls
-- Raw transactions never leave the browser or reach storage (design). Only settings, decisions, audit log, theme, privacy flag go to localStorage.
+- Raw transactions never leave the browser. Optionally (default on, switchable in Settings) the loaded file is kept in this browser's IndexedDB for 24 hours so a reload does not lose it; a History of up to 10 files (30 days) is kept the same way; both are cleared on sign-out, "Reset everything" and "Clear loaded data". On a shared computer, turn this off. Settings, decisions, audit log, theme and privacy flags are in localStorage.
 - AI input limited to ≤80 aggregated evidence items; counterparty names anonymized by default (**tested**).
 - AI output grounded: ungrounded figures, unknown citations, and numbers in follow-ups are rejected (**tested**).
 - API: POST+JSON only, same-origin check, 64 KB body cap, strict schema, 20 req/min limit, secrets never returned, fail-closed auth (**tested**).
@@ -30,3 +30,5 @@ Scope: FinSight AI MVP (sandbox). Written from the code; items marked **tested**
 5. No penetration test, dependency audit service, or formal compliance review was performed. This is not a regulated product.
 6. Supabase schema and auth flow were written to the documented REST API but **not tested against a live Supabase project**.
 7. The live AI provider call is tested with mocked HTTP only.
+8. The sign-in token is kept in sessionStorage (tab-scoped) so reloads do not sign the user out; a script injected through XSS could read it. Mitigated by the strict CSP and escape-by-default rendering, not eliminated.
+9. Saved files and History sit unencrypted in the browser profile; anyone with access to that browser profile can read them. Turn the setting off on shared computers.

@@ -26,3 +26,7 @@ Browser (ES modules, no build)                         Vercel serverless
 
 ## Why no dependencies
 Smaller supply-chain surface (the common xlsx library has known CVEs), reproducible installs, and one code path shared by browser, API and tests.
+
+## Local persistence
+`public/js/persist.js` keeps the parsed file in IndexedDB (24 h expiry, user-switchable) and restores it on boot, so reloads and mobile file-picker tab reloads do not force a re-upload. Nothing is sent to a server.
+History: `persist.js` also keeps an index of up to 10 analysed files (30-day expiry) plus each parsed table in a second IndexedDB store; `ui/history.js` lists, reopens and deletes them. The sign-in session lives in sessionStorage.

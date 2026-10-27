@@ -141,3 +141,17 @@ body.auth-page main{max-width:none;padding:0}
 .acct-link{color:var(--muted);font-size:.85rem;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.acct-link:hover{color:var(--teal)}
 @media(max-width:900px){.auth-wrap{grid-template-columns:1fr}.auth-hero{padding:28px 20px 0}.hero-h{font-size:1.5rem;max-width:none}.hero-list{display:none}}
 .auth-card .sub{margin-bottom:18px}
+
+/* welcome */
+.welcome{display:grid;gap:16px}.welcome-hero{text-align:center;padding:36px 20px;display:grid;justify-items:center;gap:10px;background:radial-gradient(90% 120% at 50% 0%,color-mix(in srgb,var(--teal) 14%,var(--surface)),var(--surface))}
+.welcome-hero h1{font-size:1.9rem;max-width:22ch;line-height:1.2}.welcome-hero .lede{max-width:56ch}.welcome-hero .row.center{margin-top:8px}
+.section-h{margin:10px 0 0;font-size:1.1rem}.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.step{position:relative}.step-n{position:absolute;top:14px;right:16px;font-size:1.6rem;font-weight:700;color:color-mix(in srgb,var(--teal) 45%,transparent)}.step h3{display:flex;gap:8px;align-items:center;margin-bottom:6px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.tile{font:inherit;color:inherit;text-align:left;cursor:pointer;display:grid;gap:6px;align-content:start}.tile:hover{border-color:var(--teal)}.tile-ic{color:var(--teal)}
+.trust{display:flex;gap:10px 24px;flex-wrap:wrap;justify-content:center;color:var(--muted);font-size:.88rem}.trust span{display:inline-flex;gap:8px;align-items:center}
+@media(max-width:820px){.welcome-hero h1{font-size:1.45rem}.welcome-hero .btn.big{width:100%;justify-content:center}}
+
+/* history */
+.hist-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.hist-head h3{display:flex;gap:8px;align-items:center;word-break:break-all}
+.hist.current{border-color:var(--teal)}.hist-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:12px 0}.hist-stats dt{color:var(--muted);font-size:.8rem}.hist-stats dd{margin:2px 0 0;font-weight:700;font-variant-numeric:tabular-nums}

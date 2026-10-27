@@ -13,16 +13,22 @@ Synthetic demo data (“Harbor & Pine Roasters”), captured from the running ap
 | **Sign in** ![Login](docs/screenshots/login.png) | **Create account** ![Sign up](docs/screenshots/signup.png) |
 | **Reset password** ![Reset](docs/screenshots/reset-password.png) | **Sign in, accounts enabled** ![Login enabled](docs/screenshots/login-accounts-enabled.png) |
 | **Data upload** ![Upload](docs/screenshots/upload-empty.png) | **Column mapping** ![Mapping](docs/screenshots/upload-column-mapping.png) |
+| **Home (after login)** ![Home](docs/screenshots/home.png) | **Home, mobile** ![Home mobile](docs/screenshots/home-mobile.png) |
+| **Welcome (no data yet)** ![Welcome](docs/screenshots/welcome.png) | **Home with demo data loaded** ![Home with data](docs/screenshots/home-demo.png) |
+| **History (past files)** ![History](docs/screenshots/history.png) | |
 | **Dashboard (dark)** ![Dashboard dark](docs/screenshots/dashboard-dark.png) | **Dashboard (light)** ![Dashboard light](docs/screenshots/dashboard-light.png) |
 | **Cash-flow forecast + scenario** ![Forecast](docs/screenshots/forecast.png) | **Risk intelligence** ![Risks](docs/screenshots/risks.png) |
 | **Financing options** ![Financing](docs/screenshots/financing.png) | **Actions & audit (sandbox)** ![Actions](docs/screenshots/actions.png) |
 | **AI Copilot** ![Copilot](docs/screenshots/copilot.png) | |
 
+## History
+Every file you analyse is listed under **History** (up to 10 files, 30 days) so you can reopen an earlier dataset without uploading it again. It is stored only in this browser's IndexedDB, never uploaded; turn it off or delete it in Settings/History. Sign-in is kept for the browser tab (sessionStorage) so a reload doesn't sign you out.
+
 ## Sign-in
 The app opens on a sign-in / sign-up / password-reset page. **Continue as guest** works without any configuration. Real accounts need Supabase (see below); without it the form is disabled and says so.
 
 ## How it works
-1. **Data in** — CSV/TSV/XLSX is parsed in the browser (own dependency-free parsers), columns auto-mapped, issues reported. Raw transactions stay in browser memory only.
+1. **Data in** — CSV/TSV/XLSX is parsed in the browser (own dependency-free parsers), columns auto-mapped, issues reported. Raw transactions are never uploaded. By default a copy of the loaded file is kept in this browser's IndexedDB for 24 hours so a reload doesn't lose it (switch off or clear in Settings).
 2. **Deterministic engines** (`public/core/`) — metrics, 13-week forecast (80% range), health score, 11 risk detectors, financing match, scenarios, action impact. Shared by browser, API and tests.
 3. **Evidence → AI** — the AI sees only a numbered list of aggregated facts (E1…En), names anonymized by default. Every number in its reply must appear in the evidence it cites, otherwise the reply is discarded and a rules-based narrative is shown.
 4. **Approvals** — proposed → approved → run *in sandbox*. Each step is written to a SHA-256 hash-chained audit log (optionally mirrored to Supabase under Row-Level Security).
@@ -43,7 +49,7 @@ npm run dev
 
 # 4. test
 npm test                    # 62 unit/integration tests (node:test)
-pip install playwright && python3 test/e2e/smoke.py   # browser smoke test (30 checks); or: npm run test:e2e
+pip install playwright && python3 test/e2e/smoke.py   # browser smoke test (46 checks); or: npm run test:e2e
 
 # regenerate the synthetic demo CSV
 npm run sample
